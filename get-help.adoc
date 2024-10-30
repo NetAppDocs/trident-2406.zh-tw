@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: get-help.html 
+keywords: get help, get support, knowledgebase, discord, phone, web, ticket, contact support, support ticket 
+summary: NetApp以多種方式支援Trident。全年無休提供廣泛的免費自助支援選項、例如不和通路。 
+---
+= 支援
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 以多種方式支援 Astra Trident 。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和不和管道。
+
+
+
+== Astra Trident 支援生命週期
+
+Astra Trident 根據您的版本提供三個層級的支援。請參閱 link:https://mysupport.netapp.com/site/info/version-support["NetApp 軟體版本支援定義"^]。
+
+完全支援:: Astra Trident 自發行日期起 12 個月內提供完整支援。
+有限支援:: Astra Trident 自發行日期起 13 至 24 個月內提供有限支援。
+自我支援:: Astra Trident 文件自發行日起 25 至 36 個月內可供使用。
+
+
+[cols="1, 1, 1, 1"]
+|===
+| 版本 | 完全支援 | 有限支援 | 自我支援 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident/index.html["24.06"^]
+| 2025 年 6 月 | 2026 年 6 月 | 2027 年 6 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident/index.html["24.02"^]
+| 2025 年 2 月 | 2026 年 2 月 | 2027 年 2 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2310/index.html["23.10"^]
+| 2024 年 10 月 | 2025 年 10 月 | 2026 年 10 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2307/index.html["23.07"^]
+| 2024 年 7 月 | 2025 年 7 月 | 2026 年 7 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2304/index.html["23.04"^]
+| -- | 2025 年 4 月 | 2026 年 4 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2301/index.html["23.01"^]
+| -- | 2025 年 1 月 | 2026 年 1 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2210/index.html["22.10"^]
+| -- | 2024 年 10 月 | 2025 年 10 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2207/index.html["22.07"^]
+| -- | 2024 年 7 月 | 2025 年 7 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2204/index.html["22.04"^]
+| -- | -- | 2025 年 4 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2201/index.html["22.01"^]
+| -- | -- | 2025 年 1 月 
+
+
+ a| 
+link:https://docs.netapp.com/us-en/trident-2110/index.html["21.10"^]
+| -- | -- | 2024 年 10 月 
+|===
+
+
+== 自我支援
+
+如需疑難排解文章的完整清單，請 https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Trident_Kubernetes["NetApp知識庫（需要登入）"^]參閱。您也可以找到 Astra 相關問題的疑難排解 https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Astra["請按這裡"^]資訊。
+
+
+
+== 社群支援
+
+Astra 上有一個充滿活力的公共容器使用者社群（包括 Astra Trident 開發人員）link:https://discord.gg/NetApp["不和通路"^]。這是您提出專案相關一般問題、並與志同道合的同儕討論相關主題的好地方。
+
+
+
+== NetApp 技術支援
+
+如需 Astra Trident 的說明、請使用建立支援服務組合 `tridentctl logs -a -n trident`、並將其傳送至 `NetApp Support <Getting Help>`。
+
+
+
+== 以取得更多資訊
+
+* link:https://cloud.netapp.com/blog/topic/astra["Astra部落格"^]
+* link:https://netapp.io/persistent-storage-provisioner-for-kubernetes/["Astra Trident部落格"^]
+* link:https://cloud.netapp.com/kubernetes-hub["Kubernetes Hub"^]
+* link:https://netapp.io/["NetApp.IO"^]
+

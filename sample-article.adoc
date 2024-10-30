@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: sample-article.html 
+keywords:  
+summary:  
+---
+= 頁面標題移至此處
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+無論您撥打什麼內容、都可以使用此範本來閱讀文章、主題。index.adoc 檔案的文章頁面關鍵字不正確、若將其作為範本使用、可能會在稍後造成發佈問題。
+
+
+NOTE: 在初始發佈之前刪除此檔案、因為即使檔案未連結至側邊列、也會發佈該檔案。建立幾篇文章之後、您可以改用這些文章做為入門文章。
+
+如果您的文章位於內容子資料夾中、您需要對上述表示法進行兩項調整：
+
+* `:imagesdir:../media/`
+* `permalink: folder-name/sample-article.html`
+
