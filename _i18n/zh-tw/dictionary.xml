@@ -3666,18 +3666,15 @@
   <block id="46fd403fb7788c53f0de4aa06ccc89d9" category="image-alt">AWS EKS 01</block>
   <block id="153bbcd55aded817c5a331d5acae54eb" category="list-text">前往 * AWS Marketplace 附加元件 * 並選擇 _storage 類別。</block>
   <block id="2b1131719d4d8198515b53a0132411fb" category="image-alt">AWS EKS 02</block>
-  <block id="07ef8d283073ee1ff1a371c82759ad14" category="list-text">找到 *&gt; NetApp * 的「答案」、然後選取 Astra Trident 附加元件的核取方塊。</block>
   <block id="5bab8196b750f3260d005a4548bc5de0" category="list-text">選擇所需版本的附加元件。</block>
   <block id="92f63954b2feb520d9a85c6ac6087ad8" category="image-alt">AWS EKS 03</block>
   <block id="165c328c69599353c4797fde7429e5b5" category="list-text">選取 IAM 角色選項以從節點繼承。</block>
-  <block id="1ada0e4c6ad383de9c12b6e1e6d56327" category="list-text">視需要設定任何選用設定、然後選取 * 下一步 * 。</block>
   <block id="b64079b8570f34f88bca59be352b20e2" category="image-alt">AWS EKS 04</block>
   <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">選擇* Create *（建立*）。</block>
   <block id="fa883f8fcd252ea2995457cd82515d03" category="list-text">確認附加元件的狀態為 _Active_ 。</block>
   <block id="2af6474930eac7fe47a45b3658bef5bf" category="image-alt">AWS EKS 05</block>
   <block id="cec2926f3f12e3edd6577d4f1edd4e22" category="section-title">使用 CLI 安裝 / 解除安裝 Astra Trident EKS 附加元件</block>
   <block id="64f82c86eee854db6eefc72dbf352f85" category="paragraph-title">使用 CLI 安裝 Astra Trident EKS 附加元件：</block>
-  <block id="1cc677653e529e467295ac3f9837cb49" category="paragraph">下列命令範例會安裝 Astra Trident EKS 附加元件：<block ref="b953d7904e30d543f476863b48e725fe" prefix=" " category="inline-code"></block><block ref="f8f93460dda1ad1de5db2f2f1c577532" prefix=" " category="inline-code"></block> （含專用版本）</block>
   <block id="5fef1c4f3767262a0ef823aaa69e1703" category="paragraph-title">使用 CLI 解除安裝 Astra Trident EKS 附加元件：</block>
   <block id="e1f272eb0b2aaba7b1cb689543f653e0" category="paragraph">下列命令會解除安裝 Astra Trident EKS 附加元件：<block ref="09a3e9c644b219341aa6e2e8a8922e59" prefix=" " category="inline-code"></block></block>
   <block id="76b4586b7207f884c66397194b773e14" category="summary">深入瞭解Amazon FSX for ONTAP Sfor Sf。本節提供後端組態範例。</block>
@@ -3746,7 +3743,6 @@
   <block id="7184de869a88c49faff4f6482457e5cb" category="section-title">啟用 AWS 的 Astra Trident 附加元件</block>
   <block id="c630096ceb1c476f438ea2fc958bc665" category="open-title">EKS 叢集</block>
   <block id="9ea02e0a94b03561cf2861dcac685125" category="paragraph">下列命令範例會安裝 Astra Trident EKS 附加元件：</block>
-  <block id="a483e3842dfe9b4c2af76a77cf2bb572" category="paragraph"><block ref="e695a6a298f39ac8b903c2a769db6ab4" prefix="" category="inline-code"></block><block ref="cd13c9a7fd0eef9fb0d553b5cac08792" prefix=" " category="inline-code"></block> （使用專用版本）</block>
   <block id="e477faed39be08642267684bb501d931" category="open-title">管理主控台</block>
   <block id="e8d532dbf6904e2793dbda6fd0d03818" category="list-text">開啟 Amazon EKS 主控台：<block ref="c4765fcd1a0f97cf67c0365ddc45d563" category="inline-link-rx"></block>。</block>
   <block id="8d1588a59bc508adad8a62ccaaa1c610" category="list-text">在左導覽窗格中、按一下 * 叢集 * 。</block>
@@ -3769,7 +3765,6 @@
   <block id="ee502e3f68953ecace683d05b827a6ae" category="section-title">更新 Astra Trident EKS 附加元件</block>
   <block id="41c9d4e34cce02a882f325b51fa9d2f4" category="list-text">檢查 FSxN Trident CSI 附加元件的目前版本。以叢集名稱取代<block ref="e2eb89f0ffaf521a0d2eeaffca04d117" prefix=" " category="inline-code"></block> 。<block ref="7b5be2809a3021f978155d101cf059cf" prefix=" " category="inline-code"></block></block>
   <block id="52b5830420efb96c3a91beb52bac3b23" category="paragraph">* 輸出範例： *</block>
-  <block id="9d5aa26aaf32741e908c5366c21ca9a5" category="list-text">將附加元件更新至上一個步驟輸出中可用更新所傳回的版本。<block ref="00b585502b38c426d735887171ce6f84" prefix=" " category="inline-code"></block></block>
   <block id="b3f252777a69b110667756babe83a98f" category="inline-link-macro">附加元件</block>
   <block id="25626757a73152ece7fdadb90ede4b7c" category="inline-link-macro">Kubernetes 現場管理</block>
   <block id="751f793ade8de1ed590e0f90ac05d8e1" category="paragraph">如果您移除此<block ref="c23ab3adaec8ca15ff3ffd0971be6152" prefix=" " category="inline-code"></block> 選項、且任何 Amazon EKS 附加元件設定與您現有的設定發生衝突、則更新 Amazon EKS 附加元件會失敗；您會收到錯誤訊息、協助您解決衝突。在指定此選項之前、請確定 Amazon EKS 附加元件不會管理您需要管理的設定、因為這些設定會以此選項覆寫。如需此設定的其他選項的詳細資訊，請參閱 <block ref="aea621f0e078efb8367c5d5e894674cd" category="inline-link-macro-rx"></block>。如需 Amazon EKS Kubernetes 現場管理的詳細資訊、請參閱 <block ref="97bdcfd76d2ff3e4855f6b36ebad236e" category="inline-link-macro-rx"></block>。</block>
@@ -3781,7 +3776,6 @@
   <block id="f1b1f807d9e1301dcc6fd3e44d5de4bd" category="list-text">（可選）您可以展開 * 可選配置設置 * 並根據需要進行修改。</block>
   <block id="3dca1b912e3d43e2a746fbcde32a6018" category="list-text">按一下*儲存變更*。</block>
   <block id="5f06738a5749e735a4681f5c09e2bafc" category="paragraph">下列範例更新 EKS 附加元件：</block>
-  <block id="14aac489d4434a82a3f9f97e8fe91694" category="paragraph"><block ref="187beb49762f7fb831051ad42bd762fe" prefix="" category="inline-code"></block></block>
   <block id="8d995c3ade9702f8b3d41df18d276fc0" category="section-title">解除安裝 / 移除 Astra Trident EKS 附加元件</block>
   <block id="d8c918c170a0768203b4c2a6218e22bf" category="paragraph">您有兩種移除 Amazon EKS 附加元件的選項：</block>
   <block id="d43d72969793ea80734b71e9c2406b2a" category="list-text">* 保留叢集上的附加軟體 * –此選項會移除 Amazon EKS 對任何設定的管理。它也會移除 Amazon EKS 通知您更新的功能、並在您啟動更新後自動更新 Amazon EKS 附加元件。不過、它會保留叢集上的附加軟體。此選項可讓附加元件成為自我管理的安裝、而非 Amazon EKS 附加元件。有了這個選項、附加元件就不會停機。保留<block ref="4b4ac0f998920a46fd2015e11d01d3e7" prefix=" " category="inline-code"></block> 命令中的選項以保留附加元件。</block>
@@ -4252,4 +4246,17 @@
   <block id="e8ce47501426b8525633fc30daf17d7a" category="sidebar">自訂磁碟區名稱</block>
   <block id="f18a50f02f48551895d57b81dd288142" category="sidebar">跨命名空間共用NFS磁碟區</block>
   <block id="62486fa65fc31c383ace8989549632ad" category="sidebar">使用快照</block>
+  <block id="0b95c9980ec3cd04cdefd538573b1be4" category="list-text">找到 *Astra NetApp Trident Trident 附加元件 * 並選取該核取方塊。</block>
+  <block id="a4e2df789e9069728f679b749e49731e" category="list-text">（可選）根據需要配置任何可選的配置設置，然後選擇 * 下一步 * 。</block>
+  <block id="0981ca89b033fc9fc2d79b4a4f3cd7d4" category="paragraph">遵循 *Add-on 組態架構 * ，並將 * 組態值 * 區段上的組態值參數設定為您在上一個步驟中建立的角色參數（值應採用下列格式：<block ref="ee1eb31b5aebe5472fc52cb0ae20b077" prefix=" " category="inline-code"></block>）。如果您為衝突解決方法選取「覆寫」、則現有附加元件的一或多個設定可以使用 Amazon EKS 附加元件設定覆寫。如果您未啟用此選項、且與現有設定發生衝突、則作業將會失敗。您可以使用產生的錯誤訊息來疑難排解衝突。選取此選項之前、請確定 Amazon EKS 附加元件不會管理您需要自行管理的設定。</block>
+  <block id="fceb57704a4212e759be2ffe9a3eb72f" category="admonition">當您設定選用參數<block ref="89abe9fddbe3cf0f9bcd7779fe4aed69" prefix=" " category="inline-code"></block>時，請確保在使用 EKS 附加元件安裝 Trident 時指定<block ref="4847e034bb0a55fcbc8a3380d6a3ab80" prefix=" " category="inline-code"></block>為<block ref="d19f2c0377f3ed7cab9377cf066cb7ef" prefix=" " category="inline-code"></block>。</block>
+  <block id="c5bc7ac802b8e0a400d724239314a7bf" category="image-alt">AWS EKS 06</block>
+  <block id="d64cfa59e3953168a377893fca4265c8" category="paragraph">下列範例命令會安裝 Astra Trident EKS 附加元件：<block ref="d51915e8dc2e65bf59ac801eb01ea812" prefix=" " category="inline-code"></block><block ref="21c6b99e1b958da23b23c0373944c626" prefix=" " category="inline-code"></block>（含專用版本）</block>
+  <block id="aacf8a1c5f871dadd44e14addd9a995d" category="admonition">當您設定選用參數<block ref="89abe9fddbe3cf0f9bcd7779fe4aed69" prefix=" " category="inline-code"></block>時，請確保在使用 EKS 附加元件安裝 Trident 時指定<block ref="d19f2c0377f3ed7cab9377cf066cb7ef" prefix=" " category="inline-code"></block>。</block>
+  <block id="53551aefdb0100694b4e814be4a899f7" category="list-text">下載 Astra Trident 安裝程式套件</block>
+  <block id="4c30a5d930bfa636976283b3efb40c20" category="paragraph">Astra Trident安裝程式套件包含部署Trident操作員及安裝Astra Trident所需的一切。從 GitHub 的 Assets 區段下載並解壓縮 Astra Trident 安裝程式的最新版本。<block ref="9c1426c4d2457ee4f25bae2c3c605ea4" prefix=" " category="inline-code"></block><block ref="90a8f47232705c284c7027631181e9a7" prefix=" " category="inline-code"></block><block ref="1600ccf6988d672a315af82be4e93709" prefix=" " category="inline-code"></block></block>
+  <block id="c198f49680a4c22b6d731cdd7d7b513a" category="paragraph">您可以使用<block ref="cd4140d3de30b520500459331d08d2bf" prefix=" " category="inline-code"></block>命令檢閱安裝詳細資料，例如名稱，命名空間，圖表，狀態，應用程式版本和修訂版編號。</block>
+  <block id="4f9bffbf1ddd667b6d18ee5fe3bc3389" category="paragraph"><block ref="3428bfd6b9aff85ad104616c57d9e301" prefix="" category="inline-code"></block><block ref="21c6b99e1b958da23b23c0373944c626" prefix=" " category="inline-code"></block> （使用專用版本）</block>
+  <block id="d7cbf82bbbafb530fdf4ff891b9d305d" category="list-text">將附加元件更新至上一個步驟輸出中可用更新所傳回的版本。<block ref="7517f28d87e3e3f5f51c7054bcfb6847" prefix=" " category="inline-code"></block></block>
+  <block id="844c1d7ef01df888c2eaad6c7c2913c1" category="paragraph"><block ref="1e4bc555b90c0333c8626cc7405bd1f8" prefix="" category="inline-code"></block></block>
 </blocks>

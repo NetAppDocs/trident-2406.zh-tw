@@ -28,17 +28,43 @@ If you want to make use of the snapshot functionality, install the CSI snapshot 
 
 == 透過 helm 安裝 Astra Trident
 
-使用下列環境變數設定 * 雲端供應商 * 和 * 雲端 IDENTITY * 旗標的值：
+. 下載 Astra Trident 安裝程式套件
++
+Astra Trident安裝程式套件包含部署Trident操作員及安裝Astra Trident所需的一切。從 GitHub 的 Assets 區段下載並解壓縮 Astra Trident 安裝程式的最新版本。
+`wget https://github.com/NetApp/trident/releases/download/v24.06.0/trident-installer-24.06.0.tar.gz`
+`tar -xf trident-installer-24.06.0.tar.gz`
+`cd trident-installer`
 
+. 使用下列環境變數設定 * 雲端供應商 * 和 * 雲端 IDENTITY * 旗標的值：
++
 `export CP="AWS"`
 `export CI="'eks.amazonaws.com/role-arn: arn:aws:iam::<accountID>:role/<AmazonEKS_FSxN_CSI_DriverRole>'"`
 
++
 以下範例安裝 Astra Trident 並將旗標設定 `cloud-provider`為 `$CP`、和 `cloud-identity` `$CI`：
 
++
 [listing]
 ----
 helm install trident trident-operator-100.2406.0.tgz --set cloudProvider=$CP --set cloudIdentity=$CI -–namespace trident
 ----
++
+您可以使用 `helm list`命令檢閱安裝詳細資料，例如名稱，命名空間，圖表，狀態，應用程式版本和修訂版編號。
+
++
+[listing]
+----
+helm list -n trident
+----
++
+[listing]
+----
+NAME                NAMESPACE   REVISION    UPDATED                                 STATUS       CHART                          APP VERSION
+
+trident-operator    trident     1           2024-10-14 14:31:22.463122 +0300 IDT    deployed     trident-operator-100.2406.1    24.06.1
+----
+
+
 
 
 == 透過 EKS 附加元件安裝 Astra Trident
@@ -71,10 +97,13 @@ Astra Trident EKS 附加元件包含最新的安全性修補程式、錯誤修�
 --
 下列命令範例會安裝 Astra Trident EKS 附加元件：
 
-`eksctl create addon --cluster clusterName --name netapp_trident-operator --version v24.02.0-eksbuild.`
-`eksctl create addon --cluster clusterName --name netapp_trident-operator --version v24.02.0-eksbuild.1` （使用專用版本）
+`eksctl create addon --cluster clusterName --name netapp_trident-operator --version v24.6.1-eksbuild`
+`eksctl create addon --cluster clusterName --name netapp_trident-operator --version v24.6.1-eksbuild.1` （使用專用版本）
 
 --
+
+NOTE: 當您設定選用參數 `cloudIdentity`時，請確保在使用 EKS 附加元件安裝 Trident 時指定 `cloudProvider`。
+
 .管理主控台
 --
 . 開啟 Amazon EKS 主控台： https://console.aws.amazon.com/eks/home#/clusters[]。
@@ -92,6 +121,10 @@ Astra Trident EKS 附加元件包含最新的安全性修補程式、錯誤修�
 .. 選擇您要使用的 * 版本 * 。
 .. 對於 * 選取 IAM 角色 * 、請保留 * 未設定 * 。
 .. 展開 * 選用組態設定 * 、遵循 * 附加元件組態架構 * 、並將 * 組態值 * 區段上的組態值參數設定為您在上一個步驟中建立的角色參數（值應採用下列格式： `eks.amazonaws.com/role-arn: arn:aws:iam::464262061435:role/AmazonEKS_FSXN_CSI_DriverRole`）。如果您為衝突解決方法選取「覆寫」、則現有附加元件的一或多個設定可以使用 Amazon EKS 附加元件設定覆寫。如果您未啟用此選項、且與現有設定發生衝突、則作業將會失敗。您可以使用產生的錯誤訊息來疑難排解衝突。選取此選項之前、請確定 Amazon EKS 附加元件不會管理您需要自行管理的設定。
++
+
+NOTE: 當您設定選用參數 `cloudIdentity`時，請確保在使用 EKS 附加元件安裝 Trident 時指定 `cloudProvider`。
+
 
 
 . 選擇 * 下一步 * 。
@@ -113,11 +146,16 @@ add-on.json
 
    "clusterName": "<eks-cluster>",
    "addonName": "netapp_trident-operator",
-   "addonVersion": "v24.2.0-eksbuild.1",
+   "addonVersion": "v24.6.1-eksbuild.1",
    "serviceAccountRoleArn": "arn:aws:iam::123456:role/astratrident-role",
-   "configurationValues": "{"cloudIdentity": "'eks.amazonaws.com/role-arn: arn:aws:iam::123456:role/astratrident-role'"}"
+   "configurationValues": "{"cloudIdentity": "'eks.amazonaws.com/role-arn: arn:aws:iam::123456:role/astratrident-role'",
+   "cloudProvider": "AWS"}"
 }
 ----
++
+
+NOTE: 當您設定選用參數 `cloudIdentity`時，請確保在使用 EKS 附加元件安裝 Trident 時指定 `AWS`為 `cloudProvider`。
+
 . 安裝 Astra Trident EKS 附加元件 "
 +
 `aws eks create-addon --cli-input-json file://add-on.json`
@@ -144,10 +182,10 @@ add-on.json
 [listing]
 ----
 NAME                        VERSION             STATUS    ISSUES    IAMROLE    UPDATE AVAILABLE    CONFIGURATION VALUES
-netapp_trident-operator    v24.2.0-eksbuild.1    ACTIVE    0       {"cloudIdentity":"'eks.amazonaws.com/role-arn: arn:aws:iam::139763910815:role/AmazonEKS_FSXN_CSI_DriverRole'"}
+netapp_trident-operator    v24.6.1-eksbuild.1    ACTIVE    0       {"cloudIdentity":"'eks.amazonaws.com/role-arn: arn:aws:iam::139763910815:role/AmazonEKS_FSXN_CSI_DriverRole'"}
 ----
 * 將附加元件更新至上一個步驟輸出中可用更新所傳回的版本。
-`eksctl update addon --name netapp_trident-operator --version v24.2.0-eksbuild.1 --cluster my-cluster --force`
+`eksctl update addon --name netapp_trident-operator --version v24.6.1-eksbuild.1 --cluster my-cluster --force`
 +
 如果您移除此 `--force` 選項、且任何 Amazon EKS 附加元件設定與您現有的設定發生衝突、則更新 Amazon EKS 附加元件會失敗；您會收到錯誤訊息、協助您解決衝突。在指定此選項之前、請確定 Amazon EKS 附加元件不會管理您需要管理的設定、因為這些設定會以此選項覆寫。如需此設定的其他選項的詳細資訊，請參閱 link:https://eksctl.io/usage/addons/["附加元件"]。如需 Amazon EKS Kubernetes 現場管理的詳細資訊、請參閱 link:https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-field-management.html["Kubernetes 現場管理"]。
 
@@ -175,7 +213,7 @@ netapp_trident-operator    v24.2.0-eksbuild.1    ACTIVE    0       {"cloudIdenti
 --
 下列範例更新 EKS 附加元件：
 
-`aws eks update-addon --cluster-name my-cluster netapp_trident-operator vpc-cni --addon-version v24.2.0-eksbuild.1 \
+`aws eks update-addon --cluster-name my-cluster netapp_trident-operator vpc-cni --addon-version v24.6.1-eksbuild.1 \
     --service-account-role-arn arn:aws:iam::111122223333:role/role-name --configuration-values '{}' --resolve-conflicts --preserve`
 
 --
