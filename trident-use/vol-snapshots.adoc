@@ -240,6 +240,98 @@ cluster1::*> volume snapshot restore -vserver vs0 -volume vol3 -snapshot vol3_sn
 
 NOTE: 當您還原快照複本時、會覆寫現有的 Volume 組態。建立快照複本之後對 Volume 資料所做的變更將會遺失。
 
+快照目錄預設為隱藏、以協助使用和 `ontap-nas-economy`驅動程式進行資源配置的磁碟區達到最大相容性 `ontap-nas`。啟用 `.snapshot`目錄、直接從快照中恢復資料。
+
+
+NOTE: 當您還原快照複本時、會覆寫現有的 Volume 組態。建立快照複本之後對 Volume 資料所做的變更將會遺失。
+
+
+
+== 從快照進行原位磁碟區還原
+
+Astra Control Provisioner 使用（ TASR ） CR 從快照中提供快速的原位磁碟區還原 `TridentActionSnapshotRestore` 功能。此 CR 是 Kubernetes 的必要行動、在作業完成後不會持續存在。
+
+Astra Control Provisioner 支援 `ontap-san`、 `ontap-san-economy`、 `ontap-nas`、 `ontap-nas-flexgroup` `azure-netapp-files`、、 `gcp-cvs` `solidfire-san` 和驅動程式。
+
+.開始之前
+您必須擁有受約束的 PVC 和可用的 Volume 快照。
+
+* 確認 PVC 狀態為「已連結」。
++
+[listing]
+----
+kubectl get pvc
+----
+* 驗證 Volume 快照是否已準備就緒可供使用。
++
+[listing]
+----
+kubectl get vs
+----
+
+
+.步驟
+. 建立 TASR CR 。本示例爲 PVC 和 Volume Snapshot 創建 CR `pvc1` `pvc1-snapshot`。
++
+[listing]
+----
+cat tasr-pvc1-snapshot.yaml
+
+apiVersion: v1
+kind: TridentActionSnapshotRestore
+metadata:
+  name: this-doesnt-matter
+  namespace: trident
+spec:
+  pvcName: pvc1
+  volumeSnapshotName: pvc1-snapshot
+----
+. 套用 CR 以從快照還原。此示例從 Snapshot 恢復 `pvc1`。
++
+[listing]
+----
+kubectl create -f tasr-pvc1-snapshot.yaml
+
+tridentactionsnapshotrestore.trident.netapp.io/this-doesnt-matter created
+----
+
+
+.結果
+Astra Control Provisioner 會從快照還原資料。您可以驗證快照還原狀態。
+
+[listing]
+----
+kubectl get tasr -o yaml
+
+apiVersion: v1
+items:
+- apiVersion: trident.netapp.io/v1
+  kind: TridentActionSnapshotRestore
+  metadata:
+    creationTimestamp: "2023-04-14T00:20:33Z"
+    generation: 3
+    name: this-doesnt-matter
+    namespace: trident
+    resourceVersion: "3453847"
+    uid: <uid>
+  spec:
+    pvcName: pvc1
+    volumeSnapshotName: pvc1-snapshot
+  status:
+    startTime: "2023-04-14T00:20:34Z"
+    completionTime: "2023-04-14T00:20:37Z"
+    state: Succeeded
+kind: List
+metadata:
+  resourceVersion: ""
+----
+[NOTE]
+====
+* 在大多數情況下、 Astra Control Provisioner 不會在發生故障時自動重試作業。您需要再次執行此作業。
+* 不具備管理員存取權限的 Kubernetes 使用者可能必須獲得管理員的權限、才能在其應用程式命名空間中建立 TASR CR 。
+
+
+====
 
 
 == 刪除含有相關快照的 PV

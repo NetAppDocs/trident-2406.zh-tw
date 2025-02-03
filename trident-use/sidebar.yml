@@ -88,6 +88,11 @@ entries:
     url: "/trident-use/vol-custom-name.html"
   - title: 跨命名空間共用NFS磁碟區
     url: "/trident-use/volume-share.html"
+  - title: 使用 SnapMirror 複寫磁碟區
+    url: "/trident-use/acp-volume-replicate.html"
+    entries:
+    - title: 啟用 Astra Control Provisioner
+      url: "/trident-use/enable-acp.html"
   - title: 使用「csi拓撲」
     url: "/trident-use/csi-topology.html"
   - title: 使用快照
