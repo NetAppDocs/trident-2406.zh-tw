@@ -20,10 +20,6 @@
   <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
   <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
   <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
-  <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
-  <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
-  <block id="cce172403b73af5c2a4e93081affcc7f" category="inline-link">Astra Trident 21.10</block>
-  <block id="606b9e83fb467a43b3065d4fd5037094" category="list-text"><block ref="606b9e83fb467a43b3065d4fd5037094" category="inline-link-rx"></block></block>
   <block id="3d522b99ca94333433532daa23e7ceab" category="summary">尋找有關安裝、設定、升級及疑難排解Astra Trident的常見問題解答。</block>
   <block id="af2a4d2810d86aa0169c117f82682f9a" category="doc">常見問題集</block>
   <block id="96ab491ef73d5db0cd15f55e1552cc22" category="section-title">一般問題</block>
@@ -194,17 +190,14 @@
   <block id="2f57a6988da045d1c26e2c5016ad0900" category="cell">2027 年 6 月</block>
   <block id="4e9b156e7e2788c8cd4b0877fd922657" category="inline-link-macro">24.02</block>
   <block id="b82311f71a5beb2fadeeab6836e53fc1" category="paragraph"><block ref="b82311f71a5beb2fadeeab6836e53fc1" category="inline-link-macro-rx"></block></block>
-  <block id="6cc5c9e930ea3d3b8bff4367c60ceea4" category="cell">2025 年 2 月</block>
   <block id="be90349da04be71a620e68314d810f7f" category="cell">2026 年 2 月</block>
   <block id="4b7cb6c36399bdd4e8724de18a1c079b" category="cell">2027 年 2 月</block>
   <block id="766995a062c6503acd7ac4752fbb865d" category="inline-link-macro">23.10</block>
   <block id="bcb8f00239af2cecd5a6b534dabea922" category="paragraph"><block ref="bcb8f00239af2cecd5a6b534dabea922" category="inline-link-macro-rx"></block></block>
-  <block id="09ea156cd1da2f7e3fda8aefab96074a" category="cell">2024 年 10 月</block>
   <block id="99dfa28920a40a7be0858c50f989a3e5" category="cell">2025 年 10 月</block>
   <block id="78c875172f37f031a2632dc008815ee1" category="cell">2026 年 10 月</block>
   <block id="217af7d1776d22530d98be04d104fd49" category="inline-link-macro">23.07</block>
   <block id="62bc04158f931e9b0a26f5676c8ab043" category="paragraph"><block ref="62bc04158f931e9b0a26f5676c8ab043" category="inline-link-macro-rx"></block></block>
-  <block id="f66bc2df80ac37f354b591907be92e18" category="cell">2024 年 7 月</block>
   <block id="928f12ce7e1197fe962e09f979b98d0d" category="cell">2025 年 7 月</block>
   <block id="a257f7f4b2f6e07845ce567df142ad00" category="cell">2026 年 7 月</block>
   <block id="1a3a2b5e6c52142797bb5c00594e2a3c" category="inline-link-macro">23.04</block>
@@ -214,7 +207,6 @@
   <block id="fc7d05f9009e90b92a15aad926bca249" category="cell">2026 年 4 月</block>
   <block id="8dfda84fc7f59655e20a770603bf9231" category="inline-link-macro">23.01</block>
   <block id="e0ed61e44672f0b6193055dd0719d240" category="paragraph"><block ref="e0ed61e44672f0b6193055dd0719d240" category="inline-link-macro-rx"></block></block>
-  <block id="9dd6e3f1271bf8cdcd9a0becace5f06f" category="cell">2025 年 1 月</block>
   <block id="7022ed6df71cc12fbd0576cef4df23fd" category="cell">2026 年 1 月</block>
   <block id="775d4bb28d257a6aa23992563a82c458" category="inline-link-macro">22.10</block>
   <block id="1d064e71d708bc66779c604db1339850" category="paragraph"><block ref="1d064e71d708bc66779c604db1339850" category="inline-link-macro-rx"></block></block>
@@ -222,10 +214,6 @@
   <block id="295e1f077ca9f1e68f56c558741bad74" category="paragraph"><block ref="295e1f077ca9f1e68f56c558741bad74" category="inline-link-macro-rx"></block></block>
   <block id="e764fe6b8f8825a307a87cedbef45678" category="inline-link-macro">22.04</block>
   <block id="865d5fc74524e198b7d4edc0b0f93cd6" category="paragraph"><block ref="865d5fc74524e198b7d4edc0b0f93cd6" category="inline-link-macro-rx"></block></block>
-  <block id="955ddf0f7e289ee80cdea4b5324b620d" category="inline-link-macro">22.01</block>
-  <block id="1d6d13ec4b4db5f5d3487f7624ba2730" category="paragraph"><block ref="1d6d13ec4b4db5f5d3487f7624ba2730" category="inline-link-macro-rx"></block></block>
-  <block id="ecdd0ca053bad0e4dd13561a556a27a2" category="inline-link-macro">21.10</block>
-  <block id="26868cf4e34a30cd32082fe3a81f7a5b" category="paragraph"><block ref="26868cf4e34a30cd32082fe3a81f7a5b" category="inline-link-macro-rx"></block></block>
   <block id="40e41fb2db11266b8f751c0d5c67cba0" category="inline-link">NetApp知識庫（需要登入）</block>
   <block id="02156e884c41dcd300cb53b1bedf09d8" category="paragraph">如需疑難排解文章的完整清單，請<block ref="57f5c759ada931c6a2051314ca6ee99e" category="inline-link-rx"></block>參閱。您也可以找到 Astra 相關問題的疑難排解<block ref="695f48b1d8b7348c0e2828947d24161e" category="inline-link-rx"></block>資訊。</block>
   <block id="1cf7168782187634fbc408c66b895dbc" category="section-title">社群支援</block>
@@ -3379,7 +3367,6 @@
   <block id="9b59e3a675bc9ca359f3369591ee7df3" category="cell">您可以指定下列其中一項：使用 Microsoft 管理主控台或 ONTAP CLI 建立的 SMB 共用名稱；允許 Astra Trident 建立 SMB 共用的名稱；或將參數保留空白以防止共用磁碟區存取。對於內部部署 ONTAP 、此參數為選用項目。Amazon FSX 需要此參數才能支援 ONTAP 後端、且不可為空白。</block>
   <block id="2bd69c3354973375e1abed3c9beb1eff" category="cell"><block ref="f777ab485270937cd9b9efc63021484f" prefix="" category="inline-code"></block></block>
   <block id="f703d18584e163e18762e4dc13ad96a0" category="cell"><block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix="" category="inline-code"></block></block>
-  <block id="28e4d45059cc52fe19d10e9452ad52f3" category="cell">使用ONTAP Isrest API的布林參數。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP REST API 與後端通訊；設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP ZAPI 呼叫與後端通訊。此功能需要ONTAP 使用更新版本的版本。此外、使用的 ONTAP 登入角色必須具有應用程式存取權<block ref="a9ba4dc88fa11d44cc7c0c918d174778" prefix=" " category="inline-code"></block> 。這是預先定義的和角色所滿足<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block><block ref="fdb6ba311fad29ec53069808f10ebef4" prefix=" " category="inline-code"></block> 的。從 Astra Trident 24.06 版本開始、 ONTAP 9.15.1 或更新版本<block ref="b673ee47a5f23fc2650c24742c76cf90" prefix=" " category="inline-code"></block> 預設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ；變更<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 使用 ONTAP ZAPI 呼叫。</block>
   <block id="a8d3b70256520cece459d618f0b69d22" category="cell"><block ref="b326b5062b2f0e69046810717534cb09" prefix="" category="inline-code"></block> 對於 ONTAP 9.15.1 或更高版本，否則<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
   <block id="ae7be78c2d3d933d426bc82820accfae" category="cell">在 ONTAP NAS 經濟型後端使用 qtree 時、可要求的 FlexVol 大小上限。</block>
   <block id="193a49bcfb561fea878daa5efe72cad9" category="section-title">用於資源配置磁碟區的後端組態選項</block>
@@ -3571,7 +3558,6 @@
   <block id="3bc2d9079510db6d0570883494bc5984" category="cell"><block ref="f899139df5e1059396431415e770c6dd" prefix="" category="inline-code"></block></block>
   <block id="3eeb940d8060411516e1578a9fd70a15" category="cell">疑難排解時要使用的偵錯旗標。例如、除非您正在進行疑難排解並需要詳細的記錄傾印、否則 ｛ "api" ： false 、 "method" ： true} 不使用。</block>
   <block id="51e6d748c5af856ade589011dc2c7e85" category="cell"><block ref="37a6259cc0c1dae299a7866489dff0bd" prefix="" category="inline-code"></block></block>
-  <block id="12cdcb1052800e2e7a70ef06991a7bee" category="cell">使用ONTAP Isrest API的布林參數。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP REST API 與後端通訊；設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP ZAPI 呼叫與後端通訊。此功能需要ONTAP 使用更新版本的版本。此外、使用的 ONTAP 登入角色必須具有應用程式存取權<block ref="a9ba4dc88fa11d44cc7c0c918d174778" prefix=" " category="inline-code"></block> 。這是預先定義的和角色所滿足<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block><block ref="fdb6ba311fad29ec53069808f10ebef4" prefix=" " category="inline-code"></block> 的。從 Astra Trident 24.06 版本開始、 ONTAP 9.15.1 或更新版本<block ref="b673ee47a5f23fc2650c24742c76cf90" prefix=" " category="inline-code"></block> 預設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ；變更<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 使用 ONTAP ZAPI 呼叫。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 完全符合 NVMe / TCP 的資格。</block>
   <block id="ddfe03e522be0cfb5413bde0d1396e78" category="cell">用於選擇<block ref="39eea648dab96b0ee6022dabb38bc420" prefix=" " category="inline-code"></block> iSCSI 或<block ref="eac89e2640666fd1076a776e4b748fae" prefix=" " category="inline-code"></block> NVMe / TCP 。</block>
   <block id="d4fbfa2dd496728ba6294eb840ce25eb" category="cell">要指派給所建立磁碟區的QoS原則群組。選擇每個儲存集區/後端的其中一個qosPolicy或adaptiveQosPolicy。搭配Astra Trident使用QoS原則群組需要ONTAP 使用更新版本的版本。我們建議使用非共用的QoS原則群組、並確保原則群組會個別套用至每個組成群組。共享的QoS原則群組將強制所有工作負載的總處理量上限。</block>
   <block id="036c0eabd455d8a92d350429f2f5747e" category="cell">要指派給所建立磁碟區的調適性QoS原則群組。選擇每個儲存集區/後端的其中一個qosPolicy或adaptiveQosPolicy</block>
@@ -4515,4 +4501,6 @@
   <block id="e932e8b67111a2dc118d7599f04cdc8b" category="paragraph">Astra Control Provisioner 會從快照還原資料。您可以驗證快照還原狀態。</block>
   <block id="454c5148c2a664f37fc49833dc491272" category="list-text">在大多數情況下、 Astra Control Provisioner 不會在發生故障時自動重試作業。您需要再次執行此作業。</block>
   <block id="c83b74c2020dd836f5b401ecda0da78c" category="list-text">不具備管理員存取權限的 Kubernetes 使用者可能必須獲得管理員的權限、才能在其應用程式命名空間中建立 TASR CR 。</block>
+  <block id="693b87b619f70e27c565c229d7653701" category="cell">使用ONTAP Isrest API的布林參數。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP REST API 與後端通訊；設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP ZAPI 呼叫與後端通訊。此功能需要ONTAP 使用更新版本的版本。此外、使用的 ONTAP 登入角色必須具有應用程式存取權<block ref="a9ba4dc88fa11d44cc7c0c918d174778" prefix=" " category="inline-code"></block> 。這是預先定義的和角色所滿足<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block><block ref="fdb6ba311fad29ec53069808f10ebef4" prefix=" " category="inline-code"></block> 的。從 Astra Trident 24.06 版本開始、 ONTAP 9.15.1 或更新版本<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 預設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ；變更<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 使用 ONTAP ZAPI 呼叫。</block>
+  <block id="c04aa5120d6658f8bcc58e95867a67da" category="cell">使用ONTAP Isrest API的布林參數。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP REST API 與後端通訊；設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP ZAPI 呼叫與後端通訊。此功能需要ONTAP 使用更新版本的版本。此外、使用的 ONTAP 登入角色必須具有應用程式存取權<block ref="a9ba4dc88fa11d44cc7c0c918d174778" prefix=" " category="inline-code"></block> 。這是預先定義的和角色所滿足<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block><block ref="fdb6ba311fad29ec53069808f10ebef4" prefix=" " category="inline-code"></block> 的。從 Astra Trident 24.06 版本開始、 ONTAP 9.15.1 或更新版本<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 預設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ；變更<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 使用 ONTAP ZAPI 呼叫。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 完全符合 NVMe / TCP 的資格。</block>
 </blocks>
