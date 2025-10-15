@@ -23,7 +23,7 @@ summary: 您可以部署Trident運算子、並使用Helm安裝Astra Trident。�
 .關於Astra Trid-功能 的資訊</strong> <strong>
 [%collapsible%open]
 ====
-* Kubernetes 1.31 現在支援 Astra Trident 。升級Kubernetes之前先升級Trident。
+* Kubernetes 1.30 現已在Astra Trident中獲得支援。在升級 Kubernetes 之前先升級Trident 。
 * Astra Trident 嚴格強制在 SAN 環境中使用多重路徑組態、建議在 multipath.conf 檔案中使用值 `find_multipaths: no`。
 +
 在 multipath.conf 檔案中使用非多重路徑組態或使用 `find_multipaths: yes`或 `find_multipaths: smart`值、將會導致掛載失敗。Trident 建議自 2007 年 21 月 1 日起使用 `find_multipaths: no`。

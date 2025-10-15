@@ -804,13 +804,11 @@
   <block id="822293db528ee892466bd05ecce74b14" category="section-title">Astra Trident 的重要資訊</block>
   <block id="d883ab5f686800bc89cab8e6bd776c10" category="paragraph">*您必須閱讀下列有關Astra Trident的重要資訊。*</block>
   <block id="92b6d6e1b0bf78702d88ede445c4256f" category="example-title">關於Astra Trid-功能 的資訊&lt;/strong&gt; &lt;strong&gt;</block>
-  <block id="a0deacb8333950a84bc0c07161a5ec2e" category="list-text">Kubernetes 1.31 現在支援 Astra Trident 。升級 Kubernetes 之前、請先升級 Astra Trident 。</block>
   <block id="7416271d47db3d82227ab2164e43c75c" category="list-text">Astra Trident 嚴格強制在 SAN 環境中使用多重路徑組態、建議在 multipath.conf 檔案中使用值<block ref="db729c5c8df447087e5a84b961df14f6" prefix=" " category="inline-code"></block>。</block>
   <block id="0acb661700c6422ee3bfc29c43c715c6" category="paragraph">在 multipath.conf 檔案中使用非多重路徑組態或使用<block ref="a3a1d5b95e345a3db24a5a30e349f699" prefix=" " category="inline-code"></block>或<block ref="e82e6d155396541f07f7347c984444ea" prefix=" " category="inline-code"></block>值、將會導致掛載失敗。Astra Trident 自 2007 年 2 月 21 日推出以來、建議您使用<block ref="db729c5c8df447087e5a84b961df14f6" prefix=" " category="inline-code"></block>。</block>
   <block id="c777be7f669397b0a376fe32ca5cd9c3" category="section-title">支援的前端（協調器）</block>
   <block id="74aefc05d193afd5c50a0df882997656" category="paragraph">Astra Trident支援多個容器引擎和協調器、包括：</block>
   <block id="7cc1edf2116d94e97b8f4a69079de132" category="list-text">Antos on － Prem （ VMware ）和 Antos on bare met金 片 1.16</block>
-  <block id="3494d431429bb2e868fc95f1c0b9665c" category="list-text">Kubernetes 1.24 - 1.31</block>
   <block id="c9db4c3d8dc7c24ea723ab5fe1e45fdb" category="list-text">OpenShift 4.10 - 4.16</block>
   <block id="201eb37826a33e35adff9119f25946bd" category="paragraph">這些版本支援Trident運算子：</block>
   <block id="79b3290789721c34f186b1651a42c3d4" category="paragraph">Astra Trident 也與許多其他完全託管且自我管理的 Kubernetes 產品合作、包括 Google Kubernetes Engine （ GKE ）、 Amazon Elastic Kubernetes Services （ EKS ）、 Azure Kubernetes Service （ aks ）、 Mirantis Kubernetes Engine （ MKE ）、 Rancher 和 VMware Tanzu Portfolio 。</block>
@@ -830,7 +828,6 @@
   <block id="80afba45eb055fc9bdc48c90d1debd06" category="cell">Kubernetes版本</block>
   <block id="10f295a61d2a793ac8936a69cf458654" category="cell">需要功能閘道？</block>
   <block id="086e6c16e3fe8e13c336612ef636aa02" category="cell">Astra Trident</block>
-  <block id="e421e06325a1dc27ebce6f0b648866a4" category="paragraph">1.24 - 1.31</block>
   <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="paragraph">否</block>
   <block id="e830b7e4d1fb7f84600876af87cb4381" category="cell">Volume Snapshot</block>
   <block id="ea8ed249117e76cb53766e218fe2b7c7" category="cell">來自Volume Snapshot的PVc</block>
@@ -861,7 +858,6 @@
   <block id="ee50d481128d1543f9945b4a4f3fbe9d" category="paragraph">對於空拍安裝、下列清單是安裝Astra Trident所需的容器映像參考資料。使用<block ref="4ebf280824868255c952dc529072ecb9" prefix=" " category="inline-code"></block>命令來驗證所需的容器映像清單。</block>
   <block id="7b5dfababf92391b5761944c63b0d3bb" category="cell">Kubernetes 版本</block>
   <block id="aa92c4c233bc01609d957e469736b699" category="cell">Container映像</block>
-  <block id="5e6f6bf1a3cfa3238a4162a4f0aa6baa" category="cell">v1.24.0 、 v1.25.0 、 v1.26.0 、 v1.27.0 、 v1.28.0 、 v1.29.0 、 v1.30.0 、 v1.31.0</block>
   <block id="082110ded218ef5f40a2b1598733539c" category="list-text">Docker 。 IO/NetApp/Trident ： 24.06.0</block>
   <block id="46eedbd0d2b0f5492c4fc15aaede92ad" category="list-text">Docker 。 IO/NetApp/Trident 自動支援： 24.06</block>
   <block id="977df580b49e7f3346777be08dfb4bad" category="list-text">registry ． k8s.io/sig-storage / csi 置備程式： v4.0</block>
@@ -984,7 +980,6 @@
   <block id="11ad6eeb0e6095efdbf4599d71303b0e" category="inline-link-macro">標準部署程序</block>
   <block id="dc0316b52aa2ab6526bdaee13c162530" category="paragraph">您可以部署Trident運算子、並使用Helm安裝Astra Trident。此程序適用於將Astra Trident所需的容器映像儲存在私有登錄中的安裝。如果您沒有私有映像登錄，請使用<block ref="2230544d14bc4ba0c61a5a1b2030a1d4" category="inline-link-macro-rx"></block>。</block>
   <block id="aeb1639e94bd68d455845850b0394f3f" category="section-title">Astra Trident 24.06 的重要資訊</block>
-  <block id="569091f6518520ecabc37c249e96bd28" category="list-text">Kubernetes 1.31 現在支援 Astra Trident 。升級Kubernetes之前先升級Trident。</block>
   <block id="7b9eed191ce5e7cc8c8d1cb8cfe2d8c8" category="paragraph">在 multipath.conf 檔案中使用非多重路徑組態或使用<block ref="a3a1d5b95e345a3db24a5a30e349f699" prefix=" " category="inline-code"></block>或<block ref="e82e6d155396541f07f7347c984444ea" prefix=" " category="inline-code"></block>值、將會導致掛載失敗。Trident 建議自 2007 年 21 月 1 日起使用<block ref="db729c5c8df447087e5a84b961df14f6" prefix=" " category="inline-code"></block>。</block>
   <block id="c9ffe59301b588bbc33bb004cfd312ee" category="section-title">部署Trident操作員、並使用Helm安裝Astra Trident</block>
   <block id="7d3f46589c43a64fd040e4f0e0691a86" category="inline-link-macro">掌舵表</block>
@@ -4503,4 +4498,10 @@
   <block id="c83b74c2020dd836f5b401ecda0da78c" category="list-text">不具備管理員存取權限的 Kubernetes 使用者可能必須獲得管理員的權限、才能在其應用程式命名空間中建立 TASR CR 。</block>
   <block id="693b87b619f70e27c565c229d7653701" category="cell">使用ONTAP Isrest API的布林參數。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP REST API 與後端通訊；設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP ZAPI 呼叫與後端通訊。此功能需要ONTAP 使用更新版本的版本。此外、使用的 ONTAP 登入角色必須具有應用程式存取權<block ref="a9ba4dc88fa11d44cc7c0c918d174778" prefix=" " category="inline-code"></block> 。這是預先定義的和角色所滿足<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block><block ref="fdb6ba311fad29ec53069808f10ebef4" prefix=" " category="inline-code"></block> 的。從 Astra Trident 24.06 版本開始、 ONTAP 9.15.1 或更新版本<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 預設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ；變更<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 使用 ONTAP ZAPI 呼叫。</block>
   <block id="c04aa5120d6658f8bcc58e95867a67da" category="cell">使用ONTAP Isrest API的布林參數。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP REST API 與後端通訊；設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>時、 Astra Trident 將使用 ONTAP ZAPI 呼叫與後端通訊。此功能需要ONTAP 使用更新版本的版本。此外、使用的 ONTAP 登入角色必須具有應用程式存取權<block ref="a9ba4dc88fa11d44cc7c0c918d174778" prefix=" " category="inline-code"></block> 。這是預先定義的和角色所滿足<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block><block ref="fdb6ba311fad29ec53069808f10ebef4" prefix=" " category="inline-code"></block> 的。從 Astra Trident 24.06 版本開始、 ONTAP 9.15.1 或更新版本<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 預設為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ；變更<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 使用 ONTAP ZAPI 呼叫。<block ref="14d839191d1ecf387a15b5b0c802a8ae" prefix=" " category="inline-code"></block> 完全符合 NVMe / TCP 的資格。</block>
+  <block id="86b88ff1a66ea55358ae99627ffdf01c" category="list-text">Kubernetes 1.30 現已在Astra Trident中獲得支援。在升級 Kubernetes 之前，請先升級Astra Trident 。</block>
+  <block id="7bcc7742161f309a6d9639847cd756b4" category="list-text">Kubernetes 1.24 - 1.30</block>
+  <block id="532b22e1372bce16aa47d735c55596cf" category="list-text">Kubernetes 1.24 - 01.30</block>
+  <block id="7c15363cb005546ae95eb8bf83c3cadd" category="paragraph">1.24 - 1.30</block>
+  <block id="88a2f4201bf0a82365ef81af5f2afeac" category="cell">v1.24.0、v1.25.0、v1.26.0、v1.27.0、v1.28.0、v1.29.0、v1.30.0</block>
+  <block id="b443358b172ce4f75319c7828483fb8b" category="list-text">Kubernetes 1.30 現已在Astra Trident中獲得支援。在升級 Kubernetes 之前先升級Trident 。</block>
 </blocks>
