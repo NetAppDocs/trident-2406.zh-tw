@@ -15,7 +15,7 @@ summary: 您應該使用與安裝 Astra Trident 相同的方法來解除安裝 A
 您應該使用與安裝 Astra Trident 相同的方法來解除安裝 Astra Trident 。
 
 .關於這項工作
-* 如果您需要修正升級、相依性問題或升級不成功或不完整之後所觀察到的錯誤、您應該解除安裝 Astra Trident 、並依照相關的特定指示重新安裝舊版link:../earlier-versions.html["版本"]。這是將 _ 降級 _ 降級至較早版本的唯一建議方法。
+* 如果您在升級後遇到錯誤、相依性問題或升級失敗/不完整等情況，需要修復，則應卸載 Astra Trident，然後按照相應版本的說明重新安裝早期版本。這是_降級_到早期版本的唯一推薦方法。
 * 為了方便升級和重新安裝、解除安裝 Astra Trident 並不會移除 Astra Trident 所建立的 CRD 或相關物件。如果您需要完全移除 Astra Trident 及其所有資料、請link:../troubleshooting.html#completely-remove-astra-trident-and-crds["完全移除 Astra Trident 和 CRD"]參閱。
 
 

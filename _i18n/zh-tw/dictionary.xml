@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="17c5eeb01739643b5aef94fe18b6c849" category="summary">您可以使用版本選取器、在最新版本與前四個版本之間瀏覽、或使用下列連結。</block>
-  <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="doc">較早版本的文件</block>
   <block id="1c62ad76355c68d0de5faf475ab1861e" category="inline-link-macro">Astra Trident 支援生命週期</block>
-  <block id="4ec89978678dcaf5641d829fd81d45d2" category="paragraph">如果您未執行 Astra Trident 24.06 、則可根據取得舊版的文件 <block ref="6e1ac221c7aa10f6bb30cbfd51cb3204" category="inline-link-macro-rx"></block>。</block>
-  <block id="41bda7aee3e78b3069b70a544ebe6b22" category="inline-link">Astra Trident 24.02</block>
-  <block id="87a363f7751a408bbc16c5c6f7a206bd" category="list-text"><block ref="87a363f7751a408bbc16c5c6f7a206bd" category="inline-link-rx"></block></block>
-  <block id="7a1b797fd20321e22ea865d10d6f2cf3" category="inline-link">Astra Trident 23.10</block>
-  <block id="76d4c03ecd62786ee18e99e8d58edc07" category="list-text"><block ref="76d4c03ecd62786ee18e99e8d58edc07" category="inline-link-rx"></block></block>
-  <block id="6933dffe806f29980dbedda6aef6fda7" category="inline-link">Astra Trident 23.07</block>
-  <block id="5190d8b9f5b246f225722ffa2f20e6b3" category="list-text"><block ref="5190d8b9f5b246f225722ffa2f20e6b3" category="inline-link-rx"></block></block>
-  <block id="35e136dc2ee53639294dbf7dbadf4436" category="inline-link">Astra Trident 23.04</block>
-  <block id="b409a213a2362e60968efbd1c87c6713" category="list-text"><block ref="b409a213a2362e60968efbd1c87c6713" category="inline-link-rx"></block></block>
-  <block id="4693b2393d80830cd4f198db20bf2b72" category="inline-link">Astra Trident 23.01</block>
-  <block id="cd494508ccf1cdc45163d6d9d0f401ff" category="list-text"><block ref="cd494508ccf1cdc45163d6d9d0f401ff" category="inline-link-rx"></block></block>
-  <block id="3fe5d266a33f137293c314a2e334b611" category="inline-link">Astra Trident 22.10</block>
-  <block id="9fefe9ff51badc61edd8a36c8240aa29" category="list-text"><block ref="9fefe9ff51badc61edd8a36c8240aa29" category="inline-link-rx"></block></block>
-  <block id="21d437ff7c8ceb5481603b5d2c05442a" category="inline-link">Astra Trident 22.07</block>
-  <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
-  <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
-  <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
   <block id="3d522b99ca94333433532daa23e7ceab" category="summary">尋找有關安裝、設定、升級及疑難排解Astra Trident的常見問題解答。</block>
   <block id="af2a4d2810d86aa0169c117f82682f9a" category="doc">常見問題集</block>
   <block id="96ab491ef73d5db0cd15f55e1552cc22" category="section-title">一般問題</block>
@@ -184,8 +165,6 @@
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">版本</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="38999be4c01ec9d8c11d4405b7dc50e0" category="inline-link-macro">24.06</block>
-  <block id="a3067ef324b1158d38cb3329c3b7fb88" category="paragraph"><block ref="a3067ef324b1158d38cb3329c3b7fb88" category="inline-link-macro-rx"></block></block>
-  <block id="94d267f658e04734eb2e098127293a89" category="cell">2025 年 6 月</block>
   <block id="c21446b3ecfb30ed6c2760d686bd4578" category="cell">2026 年 6 月</block>
   <block id="2f57a6988da045d1c26e2c5016ad0900" category="cell">2027 年 6 月</block>
   <block id="4e9b156e7e2788c8cd4b0877fd922657" category="inline-link-macro">24.02</block>
@@ -194,26 +173,17 @@
   <block id="4b7cb6c36399bdd4e8724de18a1c079b" category="cell">2027 年 2 月</block>
   <block id="766995a062c6503acd7ac4752fbb865d" category="inline-link-macro">23.10</block>
   <block id="bcb8f00239af2cecd5a6b534dabea922" category="paragraph"><block ref="bcb8f00239af2cecd5a6b534dabea922" category="inline-link-macro-rx"></block></block>
-  <block id="99dfa28920a40a7be0858c50f989a3e5" category="cell">2025 年 10 月</block>
   <block id="78c875172f37f031a2632dc008815ee1" category="cell">2026 年 10 月</block>
   <block id="217af7d1776d22530d98be04d104fd49" category="inline-link-macro">23.07</block>
   <block id="62bc04158f931e9b0a26f5676c8ab043" category="paragraph"><block ref="62bc04158f931e9b0a26f5676c8ab043" category="inline-link-macro-rx"></block></block>
-  <block id="928f12ce7e1197fe962e09f979b98d0d" category="cell">2025 年 7 月</block>
   <block id="a257f7f4b2f6e07845ce567df142ad00" category="cell">2026 年 7 月</block>
   <block id="1a3a2b5e6c52142797bb5c00594e2a3c" category="inline-link-macro">23.04</block>
   <block id="4f00a05b361ef580687832a6a48984db" category="paragraph"><block ref="4f00a05b361ef580687832a6a48984db" category="inline-link-macro-rx"></block></block>
   <block id="cfab1ba8c67c7c838db98d666f02a132" category="cell">--</block>
-  <block id="42ce83dc3f5ef22d986311b267a5ac20" category="cell">2025 年 4 月</block>
   <block id="fc7d05f9009e90b92a15aad926bca249" category="cell">2026 年 4 月</block>
   <block id="8dfda84fc7f59655e20a770603bf9231" category="inline-link-macro">23.01</block>
   <block id="e0ed61e44672f0b6193055dd0719d240" category="paragraph"><block ref="e0ed61e44672f0b6193055dd0719d240" category="inline-link-macro-rx"></block></block>
   <block id="7022ed6df71cc12fbd0576cef4df23fd" category="cell">2026 年 1 月</block>
-  <block id="775d4bb28d257a6aa23992563a82c458" category="inline-link-macro">22.10</block>
-  <block id="1d064e71d708bc66779c604db1339850" category="paragraph"><block ref="1d064e71d708bc66779c604db1339850" category="inline-link-macro-rx"></block></block>
-  <block id="b321f6c1ada34a3fa850996d673e01ca" category="inline-link-macro">22.07</block>
-  <block id="295e1f077ca9f1e68f56c558741bad74" category="paragraph"><block ref="295e1f077ca9f1e68f56c558741bad74" category="inline-link-macro-rx"></block></block>
-  <block id="e764fe6b8f8825a307a87cedbef45678" category="inline-link-macro">22.04</block>
-  <block id="865d5fc74524e198b7d4edc0b0f93cd6" category="paragraph"><block ref="865d5fc74524e198b7d4edc0b0f93cd6" category="inline-link-macro-rx"></block></block>
   <block id="40e41fb2db11266b8f751c0d5c67cba0" category="inline-link">NetApp知識庫（需要登入）</block>
   <block id="02156e884c41dcd300cb53b1bedf09d8" category="paragraph">如需疑難排解文章的完整清單，請<block ref="57f5c759ada931c6a2051314ca6ee99e" category="inline-link-rx"></block>參閱。您也可以找到 Astra 相關問題的疑難排解<block ref="695f48b1d8b7348c0e2828947d24161e" category="inline-link-rx"></block>資訊。</block>
   <block id="1cf7168782187634fbc408c66b895dbc" category="section-title">社群支援</block>
@@ -1379,7 +1349,6 @@
   <block id="43f17763173fe230bdd78477152f5f7d" category="doc">解除安裝Astra Trident</block>
   <block id="801bbd95fd335db15888ddc405e164f2" category="paragraph">您應該使用與安裝 Astra Trident 相同的方法來解除安裝 Astra Trident 。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">關於這項工作</block>
-  <block id="d4cb2483966fc1e61b1cddfccb87aada" category="list-text">如果您需要修正升級、相依性問題或升級不成功或不完整之後所觀察到的錯誤、您應該解除安裝 Astra Trident 、並依照相關的特定指示重新安裝舊版<block ref="e168bf6cc8da3b05fae6b22bcd12ba37" category="inline-link-macro-rx"></block>。這是將 _ 降級 _ 降級至較早版本的唯一建議方法。</block>
   <block id="2a1db8dc71dec3264e9155d610575785" category="inline-link-macro">完全移除 Astra Trident 和 CRD</block>
   <block id="5e080b6c391bb7d09718026dab010936" category="list-text">為了方便升級和重新安裝、解除安裝 Astra Trident 並不會移除 Astra Trident 所建立的 CRD 或相關物件。如果您需要完全移除 Astra Trident 及其所有資料、請<block ref="9d95a644de0932ac2f909a32a488bd14" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="9558f7d0f1d8a03299b4e8190dc99a73" category="paragraph">如果您要停用 Kubernetes 叢集、則必須先刪除所有使用 Astra Trident 所建立之 Volume 的應用程式、然後再解除安裝。如此可確保在刪除之前、不會在 Kubernetes 節點上發佈 PVC 。</block>
@@ -1430,8 +1399,6 @@
   <block id="0f443eb922735ce52f2b490ffca00e49" category="paragraph">您可以使用 Trident 運算子手動或使用 Helm 來升級 Astra Trident 。您可以從 Trident 營運商安裝升級至其他 Trident 營運商安裝、或從安裝升級<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>至 Trident 營運商版本。在升級 Trident 操作員安裝之前、請先檢閱<block ref="5cffa5fbe758cc3901f0e33c78b29d1b" category="inline-link-macro-rx"></block>。</block>
   <block id="3ef75911ec16a9d0ba70cfd4e68dcb71" category="section-title">升級手動安裝</block>
   <block id="aa33f1094363f0d5dc3ca342e19ec6e0" category="paragraph">您可以從叢集範圍的 Trident 運算子安裝升級到另一個叢集範圍的 Trident 運算子安裝。所有Astra Trident版本21.01及更新版本均使用叢集範圍的運算子。</block>
-  <block id="b0e74afe1fdeb605b5c47b501c43b71b" category="inline-link-macro">您已安裝的版本</block>
-  <block id="4642420c93e6091ce8421e89a16fd80d" category="admonition">若要從使用命名空間範圍運算子（ 20.07 至 20.10 版）安裝的 Astra Trident 升級、請使用 Astra Trident 的升級指示<block ref="567dd1ff029f25a404a69ff1e3c8d83b" category="inline-link-macro-rx"></block>。</block>
   <block id="eb7a4fa3d9aff7ec5b23abb8b82d516b" category="paragraph">Trident 提供一個套件檔案、可讓您用來安裝運算子、並為 Kubernetes 版本建立相關的物件。</block>
   <block id="bd2cc8575fe69c7f775292759380c838" category="inline-link-macro">bunder_pre_1_25.yaml</block>
   <block id="3681cb6a949adaa435eef8e4e44130da" category="list-text">對於運行 Kubernetes 1.24 的羣集，請使用 <block ref="7f884d51a61ccc224c466e17ab9ffa62" category="inline-link-macro-rx"></block>。</block>
@@ -1476,8 +1443,6 @@
   <block id="87459c33b1692755deb4b22c7eaa864c" category="section-title">步驟 1 ：選取版本</block>
   <block id="ecab08714a2cb76336fb5fe50c888c56" category="paragraph">Astra Trident 版本遵循以日期為基礎的<block ref="fb6921a005d395f9482cdac0306d4935" prefix=" " category="inline-code"></block>命名慣例、其中「是」是年份的最後兩位數、「 MM 」是月份。DOT 版本遵循<block ref="d93ec759c4a0e8c1cf9c7653b2939656" prefix=" " category="inline-code"></block>慣例、其中「 X 」是修補程式層級。您將根據要升級的版本、選擇要升級的版本。</block>
   <block id="3bf187c3fb64a3a3ceaaad545be725b7" category="list-text">您可以直接升級至安裝版本的四個版本範圍內的任何目標版本。例如、您可以直接從 23.04 （或任何 23.04 點版本）升級至 24.06 。</block>
-  <block id="2251733916a92fc0c61d943165128928" category="inline-link-macro">舊版</block>
-  <block id="ae60fd0ac1c235ad7b164d8e8aa1085a" category="list-text">如果您要從四個版本的外部版本升級、請執行多步驟升級。使用升級說明從升級至最新版本、以符合四個版本的 <block ref="a799aa6eaf3a5192b34ea19f24bb716f" category="inline-link-macro-rx"></block> 視窗。例如、如果您執行的是 22.01 、而且想要升級至 24.06 ：</block>
   <block id="c0a3de1e05d1f3dcaf1a7a904cd041ed" category="list-text">第一次從 22.07 升級至 23.04 。</block>
   <block id="c1453f30dfb8d4aa7bce731434afb2bb" category="list-text">然後從 23.04 升級至 24.06 。</block>
   <block id="199ed8c975e8bb544d18428ba17adbc3" category="inline-link">GitHub問題詳細資料</block>
@@ -2590,7 +2555,6 @@
   <block id="d3889fc650fa47326b5f1d0c56f50970" category="inline-link-macro">Pod安全標準</block>
   <block id="4e8effbd512bb14dbe10454c0f045ff2" category="paragraph">新增了一個新的<block ref="305368b4f0d008a807e095ab9da58448" category="inline-link-macro-rx"></block>（ PSS ）區段、詳述 Astra Trident 在安裝時啟用的權限。</block>
   <block id="278dc4a29aa2b881b9dc4b45a82929c5" category="section-title">22.04 的變更</block>
-  <block id="68b62682a14dee674629e9431b02803a" category="paragraph">NetApp持續改善及強化其產品與服務。以下是Astra Trident的一些最新功能。如需先前版本的資訊、請參閱<block ref="25da125dffad1d6323c21354bccf0203" category="inline-link-rx"></block>。</block>
   <block id="7072ec708b0ea7e3243747d8b79c0d20" category="admonition">如果您要從任何先前的 Trident 版本升級並使用 Azure NetApp Files 、則<block ref="d5189de027922f81005951e6efe0efd5" prefix="" category="inline-code"></block>組態參數現在是強制性的單一欄位。</block>
   <block id="cb60f101c87f3def78d0fef168389244" category="inline-link-macro">GitHub 問題 #681</block>
   <block id="2901fba3b85d37ea6000d90e72366ba6" category="list-text">改善iSCSI啟動器名稱的剖析。()<block ref="3947f141b94c1867221790f45a6ee173" category="inline-link-macro-rx"></block></block>
@@ -4172,7 +4136,6 @@
   <block id="9b0dbff182f270b33423b281f92bddc2" category="paragraph">將背面新增<block ref="a564a902c12941efa27c1d2ea4a19f8e" prefix=" " category="inline-code"></block>至子系統。</block>
   <block id="ea3d51fb2b16acb7cb260f25bc8965b1" category="sidebar">Astra Trident是由NetApp維護的開放原始碼儲存資源配置程式和Orchestrator。它可讓您為Docker和Kubernetes所管理的容器化應用程式建立儲存磁碟區。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
-  <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">舊版</block>
   <block id="312b0dc38b01ff32c1b2f5f81ee1ab2d" category="sidebar">與Trident營運者一起部署</block>
   <block id="e0e3d7f1aacdf4a8196132549709430c" category="sidebar">使用tridentctl部署</block>
   <block id="386307d41b3f4169a1e6e046a727cdd2" category="sidebar">與Trident營運者一起升級</block>
@@ -4522,4 +4485,9 @@
   <block id="cd8b45d6d96bb528f04c3ce2788b337d" category="paragraph">以下範例從後端<block ref="ac181edf7a7be1f8ae6a6b0ac4a71686" prefix=" " category="inline-code"></block>匯入一個名為<block ref="47068649001b68b4aba2f4219a2f981b" prefix=" " category="inline-code"></block>的 1GiB<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 磁碟區，並使用 PVC 註解設定了 RWO 存取模式：</block>
   <block id="6aa655b386a1e31c420fd6553ed2b4fc" category="paragraph">以下範例從後端<block ref="4bafc897a4f30b09156a60d3350c8819" prefix=" " category="inline-code"></block>匯入名為<block ref="a8aa3f9da25a5d21fdd26c0a26592e1e" prefix=" " category="inline-code"></block>的 1Gi<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 磁碟區，並使用 PVC 註解設定 RWO 存取模式：</block>
   <block id="3a175f8153aad5b64492df6eadb5a5af" category="paragraph">以下範例展示如何匯入託管和非託管磁碟區：</block>
+  <block id="1e441e2a6ea2842643d9b8f88e32aebf" category="paragraph"><block ref="1e441e2a6ea2842643d9b8f88e32aebf" category="inline-link-macro-rx"></block></block>
+  <block id="d5913c62c46eb5dfa6fbdf48be92191f" category="list-text">如果您在升級後遇到錯誤、相依性問題或升級失敗/不完整等情況，需要修復，則應卸載 Astra Trident，然後按照相應版本的說明重新安裝早期版本。這是_降級_到早期版本的唯一推薦方法。</block>
+  <block id="86b919b2e76fbde1eb7a5db8785b9e7f" category="admonition">若要從使用命名空間範圍運算子安裝的 Astra Trident（版本 20.07 至 20.10）進行升級,請使用適用於您已安裝的 Astra Trident 版本的升級說明。</block>
+  <block id="cf355be645efc0bf2885d297c6490a69" category="list-text">如果您要從超出四版本視窗期的版本升級，請執行多步驟升級。使用您要升級的早期版本的升級說明，升級到符合四版本視窗期的最新版本。例如，如果您目前運行的是 22.01 版本，並且想要升級到 24.06 版本：</block>
+  <block id="e1d2b7ec66528e55a29a88734b7dd47e" category="paragraph">NetApp 不斷改進和增強其產品和服務。以下是 Astra Trident 的一些最新功能。有關先前版本的信息，請參閱早期版本的文檔。</block>
 </blocks>
