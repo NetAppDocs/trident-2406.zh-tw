@@ -4490,4 +4490,6 @@
   <block id="86b919b2e76fbde1eb7a5db8785b9e7f" category="admonition">若要從使用命名空間範圍運算子安裝的 Astra Trident（版本 20.07 至 20.10）進行升級,請使用適用於您已安裝的 Astra Trident 版本的升級說明。</block>
   <block id="cf355be645efc0bf2885d297c6490a69" category="list-text">如果您要從超出四版本視窗期的版本升級，請執行多步驟升級。使用您要升級的早期版本的升級說明，升級到符合四版本視窗期的最新版本。例如，如果您目前運行的是 22.01 版本，並且想要升級到 24.06 版本：</block>
   <block id="e1d2b7ec66528e55a29a88734b7dd47e" category="paragraph">NetApp 不斷改進和增強其產品和服務。以下是 Astra Trident 的一些最新功能。有關先前版本的信息，請參閱早期版本的文檔。</block>
+  <block id="23dc68eb3282da7f8baebc1f7c84fff9" category="inline-link">支援生命週期頁面</block>
+  <block id="df26dce8cff00211af89034cce0d1904" category="admonition">有關最新 Trident 版本支援計劃，請參閱<block ref="605c91b6d04b068d1f5e6199e80f3518" category="inline-link-rx"></block>。</block>
 </blocks>
