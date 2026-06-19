@@ -157,7 +157,7 @@ parameters:
 | `managementLIF` | 叢集或 SVM 管理 LIF 的 IP 位址可以指定完整網域名稱（ FQDN ）。如果使用 IPv6 旗標安裝 Astra Trident 、則可以設定為使用 IPv6 位址。IPv6位址必須以方括弧來定義、例如[28e8：d9fb：a825：b7bf：69a8：d02f：9e7b：3555]。如果您提供的是「下方」欄位、則 `fsxFilesystemID` `aws` 不需要提供、 `managementLIF` 因為 Astra Trident 會從 AWS 擷取 SVM `managementLIF` 資訊。因此、您必須在 SVM 下提供使用者的認證（例如： vsadmin ）、且使用者必須具有該 `vsadmin` 角色。 | 「10.0.0.1」、「[2001:1234:abcd:::fefo]」 
 
 
-| `dataLIF` | 傳輸協定LIF的IP位址。*不適用NAS驅動程式*：建議您指定dataLIF ONTAP 。如果未提供、Astra Trident會從SVM擷取資料lifs。您可以指定要用於NFS掛載作業的完整網域名稱（FQDN）、讓您建立循環配置資源DNS、以便在多個資料生命期之間達到負載平衡。可在初始設定之後變更。請參閱 。*《SAN驅動程式*：請勿指定用於iSCSI》ONTAP 。Astra Trident使用ONTAP 「選擇性LUN地圖」來探索建立多重路徑工作階段所需的iSCI lifs。如果明確定義dataLIF、就會產生警告。如果使用 IPv6 旗標安裝 Astra Trident 、則可以設定為使用 IPv6 位址。IPv6位址必須以方括弧來定義、例如[28e8：d9fb：a825：b7bf：69a8：d02f：9e7b：3555]。 |  
+| `dataLIF` | 協定 LIF 的 IP 位址。*ONTAP NAS 驅動程式*：NetApp 建議指定 dataLIF。如果未提供，Trident 將從 SVM 取得 dataLIF。您可以指定一個完全限定網域名稱 （FQDN） 用於 NFS 掛載作業，從而建立輪詢 DNS 以在多個 dataLIF 之間進行負載平衡。初始設定後可以變更。請參閱。*ONTAP SAN 驅動程式*：iSCSI 無需指定。Astra Trident 使用 ONTAP Selective LUN Map 來探索建立多路徑工作階段所需的 iSCSI LIF。如果明確定義了 dataLIF，則會產生警告。如果 Astra Trident 是使用 IPv6 旗標安裝的，則可以設定為使用 IPv6 位址。IPv6 位址必須以方括號定義，例如 [28e8:d9fb:a825:b7bf:69a8:d02f:9e7b:3555]。 |  
 
 
 | `autoExportPolicy` | 啟用自動匯出原則建立及更新[布 林值]。Astra Trident 可使用 `autoExportPolicy`和 `autoExportCIDRs`選項、自動管理匯出原則。 | `false` 

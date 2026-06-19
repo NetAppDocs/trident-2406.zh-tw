@@ -84,8 +84,7 @@ Astra 上有一個充滿活力的公共容器使用者社群（包括 Astra Trid
 
 == 以取得更多資訊
 
-* link:https://cloud.netapp.com/blog/topic/astra["Astra部落格"^]
 * link:https://netapp.io/persistent-storage-provisioner-for-kubernetes/["Astra Trident部落格"^]
-* link:https://cloud.netapp.com/kubernetes-hub["Kubernetes Hub"^]
+* link:https://www.netapp.com/console/["Kubernetes Hub"^]
 * link:https://netapp.io/["NetApp.IO"^]
 

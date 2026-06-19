@@ -108,7 +108,7 @@ Amazon FSX for NetApp ONTAP 可讓您運用熟悉的 NetApp 功能、效能和�
 
 === 背後驅動程式Azure NetApp Files
 
-Astra Trident 使用 `azure-netapp-files`驅動程式來管理link:https://azure.microsoft.com/en-us/services/netapp/["Azure NetApp Files"^]服務。
+Astra Trident 使用  `azure-netapp-files` 驅動程式來管理 link:https://azure.microsoft.com/en-us/products/netapp/["Azure NetApp Files"^] 服務。
 
 有關此驅動程式及其設定方式link:https://docs.netapp.com/us-en/trident/trident-use/anf.html["Astra Trident的Azure NetApp Files 後端組態、適用於"^]的詳細資訊，請參閱。
 

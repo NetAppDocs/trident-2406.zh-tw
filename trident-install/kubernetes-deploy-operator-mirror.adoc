@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: trident-get-started/kubernetes-deploy-operator-mirror.html 
+permalink: trident-install/kubernetes-deploy-operator-mirror.html 
 keywords: deploy, astra trident, methods, operator, tridentctl, mirrored, registry, registries 
 summary: 您可以手動部署Trident運算子來安裝Astra Trident。此程序適用於將Astra Trident所需的容器映像儲存在私有登錄中的安裝。 
 ---
@@ -35,7 +35,7 @@ summary: 您可以手動部署Trident運算子來安裝Astra Trident。此程序
 
 == 手動部署Trident運算子並安裝Trident
 
-請檢閱link:../trident-get-started/kubernetes-deploy.html["安裝總覽"]以確保您符合安裝先決條件、並為您的環境選擇正確的安裝選項。
+檢查 link:kubernetes-deploy.html["安裝總覽"] 以確保滿足安裝先決條件並為您的環境選擇了正確的安裝選項。
 
 .開始之前
 登入 Linux 主機、並確認其正在管理工作中的主機、link:requirements.html["支援的Kubernetes叢集"^]以及您是否擁有必要的 Privileges 。

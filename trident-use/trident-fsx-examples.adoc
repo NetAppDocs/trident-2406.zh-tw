@@ -154,7 +154,7 @@ NOTE: 如果將PVCS附加至一或多個Pod、您必須關閉所有對應的Pod�
 | `encryption` | 在新磁碟區上啟用 NetApp Volume Encryption （ NVE ）；預設為 `false`。必須在叢集上授權並啟用NVE、才能使用此選項。如果在後端啟用NAE、則Astra Trident中配置的任何磁碟區都會啟用NAE。如需更多資訊、請參閱link:../trident-reco/security-reco.html["Astra Trident如何與NVE和NAE搭配運作"]：。 | `false` 
 
 
-| `luksEncryption` | 啟用LUKS加密。請參閱 link:../trident-reco/security-reco.html#Use-Linux-Unified-Key-Setup-(LUKS)["使用Linux統一金鑰設定（LUKS）"]。僅限 SAN 。 | " 
+| `luksEncryption` | 啟用 LUKS 加密。請參閱link:../trident-reco/security-luks.html["使用Linux統一金鑰設定（LUKS）"]。僅限 SAN。 | " 
 
 
 | `tieringPolicy` | 要使用的分層原則	`none` | `snapshot-only`適用於 ONTAP 9 前的 SVM-DR 組態 

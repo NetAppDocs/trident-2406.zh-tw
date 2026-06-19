@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: trident-get-started/kubernetes-deploy.html 
+permalink: trident-install/kubernetes-deploy.html 
 keywords: deploy, astra trident, methods, operator, tridentctl, helm, tanzu, vmware 
 summary: '您可以使用 Trident 運算子（手動或使用 Helm ）或搭配來安裝 Astra Trident `tridentctl` 。本主題提供重要資訊、協助您選擇正確的安裝程序。' 
 ---
@@ -37,7 +37,7 @@ summary: '您可以使用 Trident 運算子（手動或使用 Helm ）或搭配�
 
 無論安裝路徑為何、您都必須具備：
 
-* 對執行支援版本Kubernetes及啟用功能需求的Kubernetes叢集擁有完整權限。如需詳細資訊、請參閱link:requirements.html["需求"]。
+* 對執行受支援 Kubernetes 版本且已啟用相關功能需求的受支援 Kubernetes 叢集擁有完整權限。詳情請查看 link:/trident-get-started/requirements.html["需求"]。
 * 存取支援的NetApp儲存系統。
 * 能夠從所有Kubernetes工作節點掛載磁碟區。
 * 已安裝並設定 Linux 主機 `kubectl`（如果您使用 OpenShift 、則為或 `oc`）來管理您要使用的 Kubernetes 叢集。
@@ -46,7 +46,7 @@ summary: '您可以使用 Trident 運算子（手動或使用 Helm ）或搭配�
 
 
 
-TIP: 如果您尚未熟悉link:../trident-concepts/intro.html["基本概念"^]、現在正是您熟悉的好時機。
+TIP: 如果您還沒有熟悉 link:../trident-get-started/intro.html["基本概念"^]，現在正是了解的好時機。
 
 
 
@@ -58,7 +58,7 @@ TIP: 如果您尚未熟悉link:../trident-concepts/intro.html["基本概念"^]�
 
 === 使用Trident運算子
 
-無論是手動部署或使用Helm、Trident營運者都是簡化安裝及動態管理Astra Trident資源的絕佳方式。您甚至可以link:../trident-get-started/kubernetes-customize-deploy.html["自訂您的Trident營運者部署"]使用自訂資源（ CR ）中的屬性 `TridentOrchestrator`。
+無論手動部署或使用 Helm，Trident operator 都是簡化安裝和動態管理 Astra Trident 資源的絕佳方式。您甚至可以link:kubernetes-customize-deploy.html["自訂您的Trident營運者部署"]使用 `TridentOrchestrator`自訂資源 （CR） 中的屬性。
 
 使用Trident營運者的好處包括：
 
