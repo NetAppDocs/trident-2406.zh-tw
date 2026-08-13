@@ -20,6 +20,7 @@ Astra Control Provisioner 支援透過 NFSv3 和 NFSv4 連線進行 Kerberos 加
 
 
 
+[[configure-in-flight-kerberos-encryption-with-on-premises-ontap-volumes]]
 == 使用內部部署的 ONTAP 磁碟區來設定在線上 Kerberos 加密
 
 您可以在託管叢集與內部部署 ONTAP 儲存後端之間的儲存流量上啟用 Kerberos 加密。
@@ -38,6 +39,7 @@ NOTE: 只有使用儲存驅動程式、才支援內部部署 ONTAP 儲存後端�
 
 
 
+[[add-or-modify-ontap-export-policies]]
 === 新增或修改 ONTAP 匯出原則
 
 您需要將規則新增至現有的 ONTAP 匯出原則、或建立新的匯出原則、以支援 ONTAP 儲存 VM 根磁碟區的 Kerberos 加密、以及與上游 Kubernetes 叢集共用的任何 ONTAP 磁碟區。您新增的匯出原則規則或您建立的新匯出原則需要支援下列存取通訊協定和存取權限：
@@ -76,6 +78,7 @@ NOTE: 只有使用儲存驅動程式、才支援內部部署 ONTAP 儲存後端�
 
 
 
+[[create-a-storage-backend]]
 === 建立儲存後端
 
 您可以建立內含 Kerberos 加密功能的 Astra Control Provisioner 儲存後端組態。
@@ -143,6 +146,7 @@ tridentctl logs
 
 
 
+[[create-a-storage-class]]
 === 建立儲存類別
 
 您可以建立儲存類別、以使用 Kerberos 加密來配置磁碟區。
@@ -199,18 +203,20 @@ ontap-nas-sc    csi.trident.netapp.io   15h
 
 
 
+[[provision-volumes]]
 === 配置 Volume
 
 建立儲存後端和儲存類別之後、您現在可以配置 Volume 。請參閱以下的說明 https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html["資源配置"^]。
 
 
 
+[[configure-in-flight-kerberos-encryption-with-azure-netapp-files-volumes]]
 == 使用 Azure NetApp Files 磁碟區設定在線上 Kerberos 加密
 
 您可以在託管叢集與單一 Azure NetApp Files 儲存後端或 Azure NetApp Files 儲存後端的虛擬集區之間的儲存流量上啟用 Kerberos 加密。
 
 .開始之前
-* 確保您已在託管的 Red Hat OpenShift 叢集上啟用 Astra Control Provisioner 。請參閱 link:../use/enable-acp.html["啟用 Astra Control Provisioner"^] 以取得指示。
+* 請確保已在代管 Red Hat OpenShift 叢集上啟用 Astra Control Provisioner。如需相關指示，請參閱 link:../trident-use/enable-acp.html["啟用 Astra Control Provisioner"^]。
 * 請確定您可以存取 `tridentctl` 公用程式。
 * 請注意中的要求並遵循中的指示、以確保您已準備好 Azure NetApp Files 儲存後端進行 Kerberos 加密 https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-kerberos-encryption["本文檔 Azure NetApp Files"^]。
 * 請確定您使用 Kerberos 加密的任何 NFSv4 磁碟區都已正確設定。請參閱的 NetApp NFSv4 網域組態一節（第 13 頁） https://www.netapp.com/media/16398-tr-3580.pdf["NetApp NFSv4 增強與最佳實務指南"^]。
@@ -218,6 +224,7 @@ ontap-nas-sc    csi.trident.netapp.io   15h
 
 
 
+[[create-a-storage-backend]]
 === 建立儲存後端
 
 您可以建立包含 Kerberos 加密功能的 Azure NetApp Files 儲存後端組態。
@@ -340,6 +347,7 @@ tridentctl logs
 
 
 
+[[create-a-storage-class]]
 === 建立儲存類別
 
 您可以建立儲存類別、以使用 Kerberos 加密來配置磁碟區。
@@ -384,6 +392,7 @@ sc-nfs    csi.trident.netapp.io   15h
 
 
 
+[[provision-volumes]]
 === 配置 Volume
 
 建立儲存後端和儲存類別之後、您現在可以配置 Volume 。請參閱以下的說明 https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html["資源配置"^]。

@@ -19,7 +19,7 @@ Trident 版本 23.10 及更新版本包含使用 Astra Control Provisioner 的�
 Astra Control 的更新將取代 Astra Trident 做為儲存資源配置程式和 Orchestrator 、並成為 Astra Control 使用的必要項目。因此、強烈建議 Astra Control 使用者啟用 Astra Control Provisioner 。Astra Trident 將繼續保持開放原始碼、並以 NetApp 的新 CSI 和其他功能來發行、維護、支援及更新。
 
 .如何知道我是否需要啟用 Astra Control Provisioner ？
-如果您將叢集新增至先前未安裝 Astra Trident 的 Astra Control Service 、叢集將會標示為 `Eligible`。您之後 link:../get-started/add-first-cluster.html["將叢集新增至 Astra Control"]、 Astra Control Provisioner 將會自動啟用。
+如果您為 Astra Control Service 新增一個先前未安裝 Astra Trident 的叢集，則該叢集將被標記為 `Eligible`。將叢集新增至 Astra Control 後，Astra Control Provisioner 將自動啟用。
 
 如果您的叢集未標記、則 `Eligible`會標記為 `Partially eligible` 下列其中一項：
 
@@ -63,7 +63,7 @@ crane auth login cr.astra.netapp.io -u <account-id> -p <api-token>
 ----
 
 
-. （僅限自訂登錄）請依照下列步驟將映像移至自訂登錄。如果您不使用登錄，請遵循中的 Trident 運算子步驟 <<no-registry,下一節>>。
+. （僅限自訂登錄）請依照下列步驟將映像移至您的自訂登錄。如果您未使用登錄，請依照 <<first-step,下一節>> 中的 Trident operator 步驟操作。
 +
 
 NOTE: 您可以使用 Podman 而非 Docker 來執行下列命令。如果您使用的是 Windows 環境、建議您使用 PowerShell 。
@@ -119,13 +119,13 @@ crane copy cr.astra.netapp.io/astra/trident-acp:24.02.0 <my_custom_registry>/tri
 --
 ====
 . 確定原始 Astra Trident 安裝方法是否使用。
-. 使用您最初使用的安裝方法、在 Astra Trident 中啟用 Astra Control Provisioner ：
+. [[first-step]]使用您最初使用的安裝方法在 Astra Trident 中啟用 Astra Control Provisioner：
 +
 [role="tabbed-block"]
 ====
 .Astra Trident 運算子
 --
-.. https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html#step-1-download-the-trident-installer-package["下載 Astra Trident 安裝程式並將其解壓縮"^]。
+.. https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy-operator.html#step-1-download-the-trident-installer-package["下載 Astra Trident 安裝程式並將其解壓縮"^]。
 .. 如果您尚未安裝 Astra Trident 、或是從原始 Astra Trident 部署中移除運算子、請完成下列步驟：
 +
 ... 建立客戶需求日：
@@ -235,7 +235,7 @@ status:
 --
 .試用
 --
-.. https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-tridentctl.html#step-1-download-the-trident-installer-package["下載 Astra Trident 安裝程式並將其解壓縮"^]。
+.. https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy-tridentctl.html#step-1-download-the-trident-installer-package["下載 Astra Trident 安裝程式並將其解壓縮"^]。
 .. https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-tridentctl.html["如果您有現有的 Astra Trident 、請將其從裝載它的叢集上解除安裝"^]。
 .. 安裝 Astra Trident 並啟用 Astra Control Provisioner (`--enable-acp=true`）：
 +

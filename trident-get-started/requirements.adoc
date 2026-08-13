@@ -16,6 +16,7 @@ summary: 在安裝Astra Trident之前、您應該先檢閱這些一般系統需�
 
 
 
+[[critical-information-about-astra-trident]]
 == Astra Trident 的重要資訊
 
 *您必須閱讀下列有關Astra Trident的重要資訊。*
@@ -33,6 +34,7 @@ summary: 在安裝Astra Trident之前、您應該先檢閱這些一般系統需�
 ====
 
 
+[[supported-frontends-orchestrators]]
 == 支援的前端（協調器）
 
 Astra Trident支援多個容器引擎和協調器、包括：
@@ -58,6 +60,7 @@ WARNING: 在將安裝 Astra Trident 的 Kubernetes 叢集從 1.24 升級至 1.25
 
 
 
+[[supported-backends-storage]]
 == 支援的後端（儲存）
 
 若要使用Astra Trident、您需要下列一或多個支援的後端：
@@ -73,6 +76,7 @@ WARNING: 在將安裝 Astra Trident 的 Kubernetes 叢集從 1.24 升級至 1.25
 
 
 
+[[feature-requirements]]
 == 功能需求
 
 下表摘要說明此Astra Trident版本的可用功能及其支援的Kubernetes版本。
@@ -139,6 +143,7 @@ WARNING: 在將安裝 Astra Trident 的 Kubernetes 叢集從 1.24 升級至 1.25
 |===
 
 
+[[tested-host-operating-systems]]
 == 已測試的主機作業系統
 
 儘管Astra Trident並未正式支援特定作業系統、但已知下列項目仍能正常運作：
@@ -159,6 +164,7 @@ NOTE: NVMe / TCP 需要 RHEL 9 或更新版本。
 
 
 
+[[host-configuration]]
 == 主機組態
 
 Kubernetes叢集中的所有工作節點都必須能夠掛載您已為Pod配置的磁碟區。若要準備工作節點、您必須根據您選擇的驅動程式來安裝 NFS 、 iSCSI 或 NVMe 工具。
@@ -167,6 +173,7 @@ link:../trident-use/worker-node-prep.html["準備工作節點"]
 
 
 
+[[storage-system-configuration]]
 == 儲存系統組態
 
 Astra Trident可能需要變更儲存系統、才能使用後端組態。
@@ -175,6 +182,7 @@ link:../trident-use/backends.html["設定後端"]
 
 
 
+[[astra-trident-ports]]
 == Astra Trident連接埠
 
 Astra Trident需要存取特定連接埠才能進行通訊。
@@ -183,6 +191,7 @@ link:../trident-reference/ports.html["Astra Trident連接埠"]
 
 
 
+[[container-images-and-corresponding-kubernetes-versions]]
 == Container映像和對應的Kubernetes版本
 
 對於空拍安裝、下列清單是安裝Astra Trident所需的容器映像參考資料。使用 `tridentctl images`命令來驗證所需的容器映像清單。

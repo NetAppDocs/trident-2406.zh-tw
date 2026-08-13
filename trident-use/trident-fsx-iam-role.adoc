@@ -19,6 +19,7 @@ NOTE: 若要使用 AWS IAM 角色進行驗證、您必須使用 EKS 部署 Kuber
 
 
 
+[[create-aws-secret-manager-secret]]
 == 建立 AWS Secret Manager 機密
 
 此範例建立 AWS Secret Manager 機密以儲存 Astra Trident CSI 認證：
@@ -27,6 +28,7 @@ NOTE: 若要使用 AWS IAM 角色進行驗證、您必須使用 EKS 部署 Kuber
 
 
 
+[[create-iam-policy]]
 == 建立 IAM 原則
 
 下列範例使用 AWS CLI 建立 IAM 原則：
@@ -66,6 +68,7 @@ policy.json:
 ----
 
 
+[[create-and-iam-role-for-the-service-account]]
 == 為服務帳戶建立和 IAM 角色
 
 以下範例為 EKS 中的服務帳戶建立 IAM 角色：

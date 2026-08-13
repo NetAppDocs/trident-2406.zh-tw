@@ -16,6 +16,7 @@ summary: '您可以安全地升級適用於Docker的Astra Trident、而不會對
 
 
 
+[[upgrade]]
 == 升級
 
 執行下列步驟以升級適用於Docker的Astra Trident。
@@ -77,6 +78,7 @@ IMPORTANT: 如果您要從舊版的Astra Trident（20.10之前版本）升級至
 
 
 
+[[uninstall]]
 == 解除安裝
 
 執行下列步驟以解除安裝適用於Docker的Astra Trident。

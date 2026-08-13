@@ -16,6 +16,7 @@ summary: 深入瞭解Astra Trident透過哪些連接埠進行通訊。
 
 
 
+[[astra-trident-ports]]
 == Astra Trident連接埠
 
 Astra Trident透過下列連接埠進行通訊：

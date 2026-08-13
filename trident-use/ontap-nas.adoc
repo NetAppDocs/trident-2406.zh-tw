@@ -16,6 +16,7 @@ summary: 瞭解如何使用ONTAP NetApp NAS驅動程式設定功能的功能。O
 
 
 
+[[ontap-nas-driver-details]]
 == ONTAP NAS 驅動程式詳細資料
 
 Astra Trident 提供下列 NAS 儲存驅動程式、可與 ONTAP 叢集通訊。支援的存取模式包括： _ReadWriteOnce_ （ rwo ）、 _ReadOnlyMany （ ROX ）、 _ReadWriteMany （ rwx ）、 _ReadWriteOncePod （ RWOP_ ）。
@@ -62,6 +63,7 @@ Rwo 、 ROX 、 rwx 、 RWOP
 |===
 
 
+[[astra-control-driver-compatibility]]
 === Astra Control 驅動程式相容性
 
 Astra Control 可針對使用、和 `ontap-san`驅動程式建立的磁碟區、 `ontap-nas-flexgroup`提供無縫保護、災難恢復和行動性（在 Kubernetes 叢集之間移動磁碟區） `ontap-nas`。如 link:https://docs.netapp.com/us-en/astra-control-center/use/replicate_snapmirror.html#replication-prerequisites["Astra Control複寫先決條件"^] 需詳細資訊、請參閱。
@@ -76,6 +78,7 @@ Astra Control 可針對使用、和 `ontap-san`驅動程式建立的磁碟區、
 ====
 
 
+[[user-permissions]]
 == 使用者權限
 
 Astra Trident 預期會以 ONTAP 或 SVM 管理員的身分執行、通常使用叢集使用者或 `vsadmin` SVM 使用者、或是使用 `admin`具有相同角色的不同名稱的使用者。

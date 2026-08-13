@@ -26,6 +26,7 @@ If you want to make use of the snapshot functionality, install the CSI snapshot 
 ----
 
 
+[[install-astra-trident-via-helm]]
 == 透過 helm 安裝 Astra Trident
 
 . 下載 Astra Trident 安裝程式套件
@@ -67,12 +68,14 @@ trident-operator    trident     1           2024-10-14 14:31:22.463122 +0300 IDT
 
 
 
+[[install-astra-trident-via-the-eks-add-on]]
 == 透過 EKS 附加元件安裝 Astra Trident
 
 Astra Trident EKS 附加元件包含最新的安全性修補程式、錯誤修正程式、並經過 AWS 驗證、可與 Amazon EKS 搭配使用。EKS 附加元件可讓您持續確保 Amazon EKS 叢集安全穩定、並減少安裝、設定及更新附加元件所需的工作量。
 
 
 
+[[prerequisites]]
 === 先決條件
 
 在設定 AWS EKS 的 Astra Trident 附加元件之前、請確定您具有下列項目：
@@ -89,6 +92,7 @@ Astra Trident EKS 附加元件包含最新的安全性修補程式、錯誤修�
 
 
 
+[[enable-the-astra-trident-add-on-for-aws]]
 === 啟用 AWS 的 Astra Trident 附加元件
 
 [role="tabbed-block"]
@@ -166,6 +170,7 @@ NOTE: 當您設定選用參數 `cloudIdentity`時，請確保在使用 EKS 附�
 ====
 
 
+[[update-the-astra-trident-eks-add-on]]
 === 更新 Astra Trident EKS 附加元件
 
 [role="tabbed-block"]
@@ -220,6 +225,7 @@ netapp_trident-operator    v24.6.1-eksbuild.1    ACTIVE    0       {"cloudIdenti
 ====
 
 
+[[uninstallremove-the-astra-trident-eks-add-on]]
 === 解除安裝 / 移除 Astra Trident EKS 附加元件
 
 您有兩種移除 Amazon EKS 附加元件的選項：

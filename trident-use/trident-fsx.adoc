@@ -22,6 +22,7 @@ https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon
 
 
 
+[[requirements]]
 == 需求
 
 此外link:../trident-get-started/requirements.html["Astra Trident的需求"]、若要將適用於 ONTAP 的 FSX 與 Astra Trident 整合、您還需要：
@@ -37,6 +38,7 @@ NOTE: 根據您的 EKS AMI 類型、確保您遵循 Amazon Linux 和 Ubuntu （ 
 
 
 
+[[considerations]]
 == 考量
 
 * SMB Volume：
@@ -55,6 +57,7 @@ NOTE: 如果您要指定 Astra Trident 的 IAM 角色、則可以省略將、 `a
 
 
 
+[[authentication]]
 == 驗證
 
 Astra Trident提供兩種驗證模式。
@@ -75,6 +78,7 @@ WARNING: Astra Trident 應以 SVM 使用者或具有相同角色之不同名稱�
 
 
 
+[[find-more-information]]
 == 如需詳細資訊、請參閱
 
 * https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX for NetApp ONTAP 的支援文件"^]

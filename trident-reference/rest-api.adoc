@@ -12,10 +12,11 @@ summary: 如果您偏好與Astra Trident的REST API互動、您可以直接使�
 
 
 [role="lead"]
-雖然與 Astra Trident REST API 互動最簡單的方法、但link:tridentctl.html["tridentctl命令和選項"]您可以視需要直接使用其餘端點。
+雖然 link:../trident-managing-k8s/tridentctl.html["tridentctl命令和選項"] 是與 Astra Trident REST API 互動的最簡單方法，但如果您願意，也可以直接使用 REST 端點。
 
 
 
+[[when-to-use-the-rest-api]]
 == 何時使用REST API
 
 REST API適用於在非Kubernetes部署中使用Astra Trident做為獨立二進位元的進階安裝。
@@ -24,6 +25,7 @@ REST API適用於在非Kubernetes部署中使用Astra Trident做為獨立二進�
 
 
 
+[[using-rest-api]]
 == 使用REST API
 
 有關如何調用這些 API 的示例，請傳遞 debug (`-d`標誌。如需詳細資訊、請 link:../trident-managing-k8s/tridentctl.html["使用 Tridentctl 管理 Astra Trident"]參閱。
@@ -32,6 +34,7 @@ API的運作方式如下：
 
 
 
+[[get]]
 === 取得
 
 `GET <trident-address>/trident/v1/<object-type>`:: 列出該類型的所有物件。
@@ -40,6 +43,7 @@ API的運作方式如下：
 
 
 
+[[post]]
 === 貼文
 
 `POST <trident-address>/trident/v1/<object-type>`:: 建立指定類型的物件。
@@ -54,6 +58,7 @@ API的運作方式如下：
 
 
 
+[[delete]]
 === 刪除
 
 `DELETE <trident-address>/trident/v1/<object-type>/<object-name>`:: 刪除命名資源。

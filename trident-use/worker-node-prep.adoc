@@ -16,6 +16,7 @@ Kubernetes叢集中的所有工作節點都必須能夠掛載您已為Pod配置�
 
 
 
+[[selecting-the-right-tools]]
 == 選擇適當的工具
 
 如果您使用的是驅動程式組合、則應該安裝所有必要的驅動程式工具。最新版本的 RedHat CoreOS 預設會安裝這些工具。
@@ -34,6 +35,7 @@ NOTE: 我們建議使用適用於 NVMe / TCP 的 ONTAP 9.12 或更新版本。
 
 
 
+[[node-service-discovery]]
 == 節點服務探索
 
 Astra Trident會嘗試自動偵測節點是否能執行iSCSI或NFS服務。
@@ -57,6 +59,7 @@ tridentctl get node -o wide -n <Trident namespace>
 ----
 
 
+[[nfs-volumes]]
 == NFS 磁碟區
 
 使用作業系統的命令來安裝NFS工具。確保NFS服務在開機期間啟動。
@@ -83,12 +86,14 @@ WARNING: 安裝NFS工具之後、請重新啟動工作節點、以避免將磁�
 
 
 
+[[iscsi-volumes]]
 == iSCSI磁碟區
 
 Astra Trident可自動建立iSCSI工作階段、掃描LUN、探索多重路徑裝置、將其格式化、並將其掛載至Pod。
 
 
 
+[[iscsi-self-healing-capabilities]]
 === iSCSI自我修復功能
 
 對於支援此技術的系統、Astra Trident每五分鐘執行一次iSCSI自我修復、以便ONTAP ：
@@ -121,6 +126,7 @@ NOTE: 例如、如果在儲存控制器上旋轉CHAP機密、而網路失去連�
 
 
 
+[[install-the-iscsi-tools]]
 === 安裝iSCSI工具
 
 使用適用於您作業系統的命令來安裝iSCSI工具。
@@ -238,6 +244,7 @@ NOTE: 對於 Ubuntu 18.04 、您必須先探索目標連接埠 `iscsiadm`、然�
 ====
 
 
+[[configure-or-disable-iscsi-self-healing]]
 === 設定或停用 iSCSI 自我修復
 
 您可以設定下列 Astra Trident iSCSI 自我修復設定、以修正過時的工作階段：
@@ -280,6 +287,7 @@ tridentctl install --iscsi-self-healing-interval=3m0s --iscsi-self-healing-wait-
 ====
 
 
+[[nvmetcp-volumes]]
 == NVMe / TCP 磁碟區
 
 使用適用於您作業系統的命令來安裝 NVMe 工具。
@@ -314,6 +322,7 @@ sudo modprobe nvme-tcp
 ====
 
 
+[[verify-installation]]
 === 驗證安裝
 
 安裝後、請使用命令確認 Kubernetes 叢集中的每個節點都有唯一的 NQN ：

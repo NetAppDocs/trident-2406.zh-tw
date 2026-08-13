@@ -16,6 +16,7 @@ Astra Trident 是由 NetApp 維護的完全支援的開放原始碼專案link:ht
 
 
 
+[[what-is-astra]]
 == 什麼是Astra？
 
 Astra可讓企業更輕鬆地管理、保護及搬移在公有雲內部及內部部署的Kubernetes上執行的資料豐富的容器化工作負載。
@@ -26,6 +27,7 @@ Astra 提供並提供以 Astra Trident 為基礎的永久性容器儲存設備�
 
 
 
+[[what-is-astra-trident]]
 == 什麼是 Astra Trident ？
 
 Astra Trident 可在所有常見的 NetApp 儲存平台、公有雲或內部部署（包括 ONTAP （ AFF 、 FAS 、 Select 、 Cloud 、 Amazon FSX for NetApp ONTAP ）、 Element 軟體（ NetApp HCI 、 SolidFire ）、 Azure NetApp Files 服務、以及 Google Cloud 上的 Cloud Volumes Service 。
@@ -39,9 +41,10 @@ NOTE: 如果這是您第一次使用 Kubernetes 、您應該熟悉link:https://k
 
 
 
+[[take-the-astra-trident-test-drive]]
 == 參加 Astra Trident 試用
 
-若要試用、請使用現成的實驗室映像、要求存取「輕鬆部署及複製容器化工作負載的持續儲存設備」link:https://www.netapp.com/us/try-and-buy/test-drive/index.aspx["NetApp試用"^]。此測試磁碟機提供一個沙箱環境、其中安裝並設定了三節點 Kubernetes 叢集和 Astra Trident 。這是熟悉 Astra Trident 並探索其功能的好方法。
+若要進行試用，請申請存取「輕鬆部署和複製容器化工作負載的持久性儲存」解決方案link:https://www.netapp.com/test-drives/["NetApp試用"^]，該方案提供即用型實驗室映像。試用環境包含一個沙箱環境，其中安裝並設定了三節點 Kubernetes 叢集和 Astra Trident。這是熟悉 Astra Trident 並探索其功能的絕佳方式。
 
 另一個選項是 link:https://kubernetes.io/docs/setup/independent/install-kubeadm/["Kubeadm安裝指南"]Kubernetes 提供的。
 
@@ -50,6 +53,7 @@ NOTE: 請勿在正式作業環境中使用這些指示來建置 Kubernetes 叢�
 
 
 
+[[kubernetes-integration-with-netapp-products]]
 == Kubernetes 與 NetApp 產品整合
 
 NetApp 儲存產品組合可與 Kubernetes 叢集的許多層面整合、提供進階的資料管理功能、強化 Kubernetes 部署的功能、功能、效能和可用度。
@@ -102,6 +106,7 @@ link:https://docs.netapp.com/us-en/ontap/index.html["NetApp ONTAP"^]是 NetApp �
 ====
 
 
+[[for-more-information]]
 == 以取得更多資訊
 
 * https://docs.netapp.com/us-en/astra-family/intro-family.html["NetApp Astra產品系列"^]

@@ -16,6 +16,7 @@ summary: 瞭解使用 ONTAP NAS 驅動程式設定 ONTAP 後端的需求、驗�
 
 
 
+[[requirements]]
 == 需求
 
 * 對於所有ONTAP 的不支援端點、Astra Trident至少需要指派一個集合體給SVM。
@@ -26,6 +27,7 @@ summary: 瞭解使用 ONTAP NAS 驅動程式設定 ONTAP 後端的需求、驗�
 
 
 
+[[authenticate-the-ontap-backend]]
 == 驗證 ONTAP 後端
 
 Astra Trident提供兩種驗ONTAP 證功能來驗證支援的後端。
@@ -41,6 +43,7 @@ WARNING: 如果您嘗試同時提供*認證與認證*、後端建立將會失敗
 
 
 
+[[enable-credential-based-authentication]]
 === 啟用認證型驗證
 
 Astra Trident需要SVM範圍/叢集範圍管理員的認證資料、才能與ONTAP 該後端進行通訊。建議您使用標準的預先定義角色、例如 `admin`或 `vsadmin`。這可確保與未來ONTAP 的支援版本保持前瞻相容、因為未來的Astra Trident版本可能會使用功能API。您可以建立自訂的安全登入角色、並與Astra Trident搭配使用、但不建議使用。
@@ -85,6 +88,7 @@ password: password
 
 
 
+[[enable-certificate-based-authentication]]
 === 啟用憑證型驗證
 
 新的和現有的後端可以使用憑證、並與ONTAP 該後端通訊。後端定義需要三個參數。
@@ -167,6 +171,7 @@ tridentctl update backend NasBackend -f cert-backend-updated.json -n trident
 
 
 
+[[update-authentication-methods-or-rotate-credentials]]
 === 更新驗證方法或旋轉認證資料
 
 您可以更新現有的後端、以使用不同的驗證方法或旋轉其認證資料。這兩種方法都可行：使用使用者名稱/密碼的後端可更新以使用憑證；使用憑證的後端可更新為使用者名稱/密碼。若要這麼做、您必須移除現有的驗證方法、然後新增驗證方法。然後使用包含執行所需參數的更新後端 .json 檔案 `tridentctl update backend`。
@@ -201,6 +206,7 @@ NOTE: 當您旋轉密碼時、儲存管理員必須先更新ONTAP 使用者的�
 
 
 
+[[manage-nfs-export-policies]]
 == 管理NFS匯出原則
 
 Astra Trident使用NFS匯出原則來控制其所配置之磁碟區的存取。
@@ -213,6 +219,7 @@ Astra Trident使用NFS匯出原則來控制其所配置之磁碟區的存取。
 
 
 
+[[dynamically-manage-export-policies]]
 === 動態管理匯出原則
 
 Astra Trident 提供動態管理 ONTAP 後端匯出原則的能力。這可讓儲存管理員為工作節點IP指定允許的位址空間、而非手動定義明確的規則。它可大幅簡化匯出原則管理；修改匯出原則不再需要在儲存叢集上進行手動介入。此外、這有助於限制只有在指定範圍內有IP的工作者節點才能存取儲存叢集、以支援精細且自動化的管理。
@@ -291,6 +298,7 @@ NOTE: 刪除具有自動管理匯出原則的後端、將會刪除動態建立�
 
 
 
+[[prepare-to-provision-smb-volumes]]
 == 準備配置SMB磁碟區
 
 只需稍加準備、您就能使用驅動程式來配置 SMB 磁碟區 `ontap-nas`。

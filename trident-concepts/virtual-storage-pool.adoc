@@ -16,6 +16,7 @@ summary: 虛擬資源池在Astra Trident的儲存後端與Kubernetes的StorageCl
 
 
 
+[[learn-about-virtual-pools]]
 == 瞭解虛擬資源池
 
 儲存管理員可在Json或Yaml定義檔案的任何Astra Trident後端上定義虛擬資源池。

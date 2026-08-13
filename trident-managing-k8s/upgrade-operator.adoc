@@ -16,6 +16,7 @@ summary: 您可以使用業者輕鬆升級現有的Astra Trident安裝。
 
 
 
+[[upgrade-a-manual-installation]]
 == 升級手動安裝
 
 您可以從叢集範圍的 Trident 運算子安裝升級到另一個叢集範圍的 Trident 運算子安裝。所有Astra Trident版本21.01及更新版本均使用叢集範圍的運算子。
@@ -57,6 +58,7 @@ kubectl create -f 24.06.0/trident-installer/deploy/<bundle.yaml> -n trident
 
 
 
+[[upgrade-a-helm-installation]]
 == 升級 Helm 安裝
 
 您可以升級 Astra Trident Helm 安裝。
@@ -85,6 +87,7 @@ NOTE: 如果您在初始安裝期間設定自訂選項（例如指定 Trident �
 
 
 
+[[upgrade-from-a-tridentctl-installation-to-trident-operator]]
 == 從安裝升級 `tridentctl`至 Trident 營運商
 
 您可以從安裝升級至最新版本的 Trident 操作員 `tridentctl`。現有的後端和 PVC 將會自動提供使用。

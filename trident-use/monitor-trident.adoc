@@ -16,6 +16,7 @@ Astra Trident 提供一組 Prometheus 指標端點、可用來監控 Astra Tride
 
 
 
+[[overview]]
 == 總覽
 
 Astra Trident提供的指標可讓您執行下列作業：
@@ -36,12 +37,14 @@ NOTE: 根據預設、 Trident 的度量會公開在端點的 `/metrics`目標連
 
 
 
+[[step-1-define-a-prometheus-target]]
 == 步驟1：定義Prometheus目標
 
 您應該定義Prometheus目標、以收集指標並取得有關後端Astra Trident管理的資訊、以及其建立的磁碟區等資訊。這 https://netapp.io/2020/02/20/prometheus-and-trident/["部落格"^]將說明如何使用 Prometheus 和 Grafana 搭配 Astra Trident 來擷取計量。部落格說明如何在 Kubernetes 叢集中以運算符的形式執行 Prometheus 、以及如何建立 ServiceMonitor 來取得 Astra Trident 指標。
 
 
 
+[[step-2-create-a-prometheus-servicemonitor]]
 == 步驟2：建立Prometheus ServiceMonitor
 
 若要使用 Trident 度量、您應該建立 Prometheus ServiceMonitor 、以監控 `trident-csi`服務並在連接埠上接聽 `metrics`。ServiceMonitor範例如下所示：
@@ -73,6 +76,7 @@ spec:
 
 
 
+[[step-3-query-trident-metrics-with-promql]]
 == 步驟3：使用PromQL查詢Trident度量
 
 PromQL適用於建立傳回時間序列或表格資料的運算式。
@@ -81,6 +85,7 @@ PromQL適用於建立傳回時間序列或表格資料的運算式。
 
 
 
+[[get-trident-health-information]]
 === 取得Trident健全狀況資訊
 
 * 來自Astra Trident的HTTP 2XX回應百分比*
@@ -106,6 +111,7 @@ sum by (operation) (trident_operation_duration_milliseconds_sum{success="true"})
 ----
 
 
+[[get-astra-trident-usage-information]]
 === 取得Astra Trident使用資訊
 
 * 平均Volume大小*
@@ -124,6 +130,7 @@ sum (trident_volume_allocated_bytes) by (backend_uuid)
 ----
 
 
+[[get-individual-volume-usage]]
 === 取得個別Volume使用量
 
 
@@ -138,6 +145,7 @@ kubelet_volume_stats_used_bytes / kubelet_volume_stats_capacity_bytes * 100
 ----
 
 
+[[learn-about-astra-trident-autosupport-telemetry]]
 == 深入瞭解Astra Trident AutoSupport 遙測技術
 
 依預設、Astra Trident會每日傳送Prometheus指標和基本後端資訊給NetApp。
@@ -176,6 +184,7 @@ items:
 
 
 
+[[disable-astra-trident-metrics]]
 == 停用Astra Trident度量
 
 若要 ** 停用報告的 ** 度量、您應該產生自訂的 YAML （使用 `--generate-custom-yaml`旗標）、然後加以編輯、以移除 `--metrics`容器所叫用的旗標 `trident-main`。

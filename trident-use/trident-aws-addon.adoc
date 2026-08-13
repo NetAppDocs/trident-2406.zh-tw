@@ -16,6 +16,7 @@ Astra Trident 簡化了在 Kubernetes 進行 NetApp ONTAP 儲存管理的 Amazon
 
 
 
+[[prerequisites]]
 == 先決條件
 
 在設定 AWS EKS 的 Astra Trident 附加元件之前、請確定您具有下列項目：
@@ -32,6 +33,7 @@ Astra Trident 簡化了在 Kubernetes 進行 NetApp ONTAP 儲存管理的 Amazon
 
 
 
+[[steps]]
 == 步驟
 
 . 在您的 EKS Kubernetes 叢集上、瀏覽至 * 附加元件 * 索引標籤。
@@ -71,6 +73,7 @@ image::../media/aws-eks-05.png[AWS EKS 05]
 
 
 
+[[installuninstall-the-astra-trident-eks-add-on-using-cli]]
 == 使用 CLI 安裝 / 解除安裝 Astra Trident EKS 附加元件
 
 .使用 CLI 安裝 Astra Trident EKS 附加元件：

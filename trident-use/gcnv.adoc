@@ -20,6 +20,7 @@ summary:
 ----
 
 
+[[google-cloud-netapp-volumes-driver-details]]
 == Google Cloud NetApp Volumes 驅動程式詳細資料
 
 Astra Trident 提供 `google-cloud-netapp-volumes` 與叢集通訊的驅動程式。支援的存取模式包括： _ReadWriteOnce_ （ rwo ）、 _ReadOnlyMany （ ROX ）、 _ReadWriteMany （ rwx ）、 _ReadWriteOncePod （ RWOP_ ）。

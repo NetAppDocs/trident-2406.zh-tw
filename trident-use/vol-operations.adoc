@@ -16,6 +16,7 @@ summary: Astra Trident提供多項管理磁碟區的功能。瞭解Astra Trident
 
 
 
+[[managing-volumes]]
 == 管理磁碟區
 
 請參閱下列內容、瞭解如何使用 Astra Trident 來管理 Volume 。
