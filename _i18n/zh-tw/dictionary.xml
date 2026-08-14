@@ -4470,7 +4470,6 @@
   <block id="05fc06287c0a941160e7d720a19832c9" category="paragraph">是的，Astra Trident 可以離線安裝。請參閱 <block ref="0a8f801f4a8f59befe0bce875b836d6c" category="inline-link-macro-rx"></block>。</block>
   <block id="86225dcb19db1de0fac1aa3e3f6a51f7" category="paragraph">Trident 安裝程式會建立一個 Kubernetes ClusterRole，該實例擁有對 Kubernetes 叢集的 PersistentVolume、PersistentVolumeClaim、StorageClass 和 Secret 資源的特定存取權。請參閱 <block ref="e4b7fd8c6cc5dd78952350dce1750124" category="inline-link-macro-rx"></block>。</block>
   <block id="1e011868ab20c9e559f0a57d12d019fb" category="paragraph">若要進行試用，請申請存取「輕鬆部署和複製容器化工作負載的持久性儲存」解決方案<block ref="1b82f3af90a0f7c7537a178da2b2ffa1" category="inline-link-macro-rx"></block>，該方案提供即用型實驗室映像。試用環境包含一個沙箱環境，其中安裝並設定了三節點 Kubernetes 叢集和 Astra Trident。這是熟悉 Astra Trident 並探索其功能的絕佳方式。</block>
-  <block id="fd70f1b164adc63154ddd14bc45da369" category="paragraph">除了 <block ref="f0147e8cec197bebba8f7503f81d4b69" category="inline-link-macro-rx"></block> 之外，您還需要 <block ref="fc0cdbd8defe0c7175199dd05a0f8e76" category="inline-link-macro-rx"></block>。</block>
   <block id="da4135ce2a4993f23b82709d1072d478" category="paragraph">登入 Linux 主機，並驗證它是否正在管理一個正常運作的 <block ref="f546aa86570a808d23361d7f4e2a08c3" category="inline-link-macro-rx"></block>，以及您是否擁有必要的權限。</block>
   <block id="0d8f30017a3c82df9a5d969fa5e4586f" category="paragraph">在開始安裝之前，請登入 Linux 主機並驗證它是否正在管理運作中的 <block ref="f546aa86570a808d23361d7f4e2a08c3" category="inline-link-macro-rx"></block>，以及您是否擁有必要的權限。</block>
   <block id="6e0142dfd4a5236fbce5c22e4e30fc2b" category="paragraph">在開始安裝之前，請登入 Linux 主機並驗證它是否正在管理運作中的 <block ref="958ebeab180637e89445160bac2d22e7" category="inline-link-macro-rx"></block>，以及您是否擁有必要的權限。</block>
@@ -4487,4 +4486,5 @@
   <block id="685a641d8dbaf63cf2a76d810249d834" category="list-text">[[first-step]]使用您最初使用的安裝方法在 Astra Trident 中啟用 Astra Control Provisioner：</block>
   <block id="c30252f2d0066b5068c0018598caa179" category="list-text"><block ref="9dd8c260676cdbe799894b1bfaa380f3" category="inline-link-rx"></block>。</block>
   <block id="5b1ab0fe5df34787bb6e83e783c2d46f" category="list-text"><block ref="299939be75f9a3e7d44493947c6b6dbe" category="inline-link-rx"></block>。</block>
+  <block id="db7fc8df66e930e05282807a6ebd58f4" category="paragraph">除了 <block ref="1feb3274d112f2cef694d133af384cac" category="inline-link-macro-rx"></block> 之外，您還需要 <block ref="fc0cdbd8defe0c7175199dd05a0f8e76" category="inline-link-macro-rx"></block>。</block>
 </blocks>
